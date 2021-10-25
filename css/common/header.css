@@ -1,0 +1,87 @@
+/*header */
+header.header{
+    /* border: 1px solid black;
+    /* width: 100%; */
+    width: auto;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #AB6E13;
+    position: sticky; 
+    z-index: 30;
+    top: 0px;
+    /* background-image: url(../../images/back/images.jpeg);
+    background-repeat: repeat; */
+} 
+
+header.header a.man > img{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+header.header a.shoppingcar > img{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 150px;
+}
+/*  header */
+
+ /* menu */
+ div.parent_container aside.aside{
+    /* border: 1px solid blue; */
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    z-index: 40;
+    float: left;
+    background-color:rgba(246, 212, 123, .7);
+    /* background-image: url(../../images/back/back01.jpg);
+    background-repeat:repeat ; */
+    }
+/* 
+div.parent_container aside.aside a.logo > img:hover{
+    transform: rotate(-20deg);  
+    transform-origin: 50% 50%; 
+} */
+
+
+div.parent_container aside.aside a.logo > img{
+    width: 239px;
+    height: 142px;
+    border-radius: 75px 75px 10px 75px;
+    position: relative;
+    bottom: 71px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.parent_container aside.aside a.logo > img:hover{
+    transform: translate(-10px, -10px);
+}
+div.parent_container aside.aside nav.nav{
+    /* border: 1px solid red; */
+}
+aside.aside nav.nav ul.menu_list > li{
+    list-style: none;
+    /* border: 1px solid blue; */
+    vertical-align: baseline;
+    padding: 10px;
+    font-size: 20px;
+    padding: 10px ;
+    display: block;
+    margin-left: 50px;
+}
+aside.aside nav.nav ul.menu_list > li:hover{
+    text-shadow: 2px 2px 5px #AB6E13;
+    transform: translate(-10px, -10px);
+}
+aside.aside nav.nav ul.menu_list > li > a{
+    text-decoration: none;
+    /* color: black; */
+    color: #AB6E13;
+}
+    /*   menu   */

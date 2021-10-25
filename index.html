@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <title>狐塗帳</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+
+    <style>
+        
+        div.parent_container{
+            width: 1200px;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+            font-size: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        div.parent_container aside.aside, div.parent_container main.main{
+            display: inline-block;
+            vertical-align: top;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        div.parent_container main.main{
+            /* border: 1px solid green; */
+            /* width: 100%; */
+            margin-left: 250px;
+            background-color: #FFF3E1;
+            background-image: url(./images/back/back01.jpg);
+            background-repeat:repeat ;
+        }
+        div.parent_container main.main  img.cover{
+            width: 950px;
+            height: 600px;
+            background-size: cover;
+            /* border-radius: 75px; */
+            display: block;
+            margin: 0;
+        }
+         div.parent_container main.main div.divider{
+            height: 33px;
+            /* border: 1px solid black; */
+            background-image: url(./images/divider2.png);
+            background-repeat:no-repeat ;
+            margin: 66px 50px 50px 50px;
+        }
+        main.main div.about_wraper{
+            /* border: 1px solid black; */
+            font-size: 0;
+            display: block;
+            background-image: url(./images/06.png);
+            padding-bottom: 50px;
+        }
+        main.main div.about_wraper div.about_pic, div.about_text{
+           /* border: 1px solid blue; */
+            font-size: 0;
+            display: inline-block;
+        }
+        main.main div.about_wraper div.about_pic{
+            width: 450px;
+            height: 350px;
+            margin-left: 70px;
+            margin-top: 73px;
+            /* z-index: 2; */
+            position: absolute;
+            z-index: 20;
+        }
+        main.main div.about_wraper div.about_pic > img.about_pic{
+            display: inline-block;
+            background-size: cover ;
+            width: 450px;
+            height: 350px;
+        }
+        main.main div.about_wraper div.about_text{
+            width: 525px;
+            height: 397px;
+            display: inline-block;
+            margin-left: 350px;
+            margin-top: 150px;
+            /* position: absolute; */
+            z-index: 10;
+        }
+        main.main div.about_wraper div.about_text div.text_box{
+            border:1px solid white;
+            background-color:  white;
+            border-radius: 20px;
+        }
+        main.main div.about_wraper div.about_text div.text_box >p{
+            font-size: 20px;
+            text-align: center;
+            line-height: 2;
+            margin: 59px 100px 59px 200px;
+            text-shadow: 0px 0px 10px gray;
+        }
+        main.main div.announcement{ 
+            /* border: 1px solid black; */
+            font-size: 0px;
+            color: #AB6E13;
+            margin: auto ;
+        }
+        main.main div.announcement > table {
+            /* border: 1px solid black; */
+            font-size: 24px;
+            /* border-collapse: collapse; */
+            display: block;
+            background-color: #FFF3E1;
+            padding: 20px 0 20px 0;
+            /* margin-top: 66px; */
+        }
+        main.main div.announcement > table >tr,td{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            height: 60px;
+            padding-left: 110px;
+            padding-right: 100px;
+        }
+        main.main div.announcement  table td.right{
+            border-right:5px solid white;
+        }    
+        /*  產品區  */
+        main.main div.product_wraper{
+            /* border: 1px solid red; */
+            width: 954px;
+            height: 916px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 45px;
+            background-color: white;
+            background-image: url(./images/photo/product_back.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        /* main.main div.product_wraper div.newproduct_text{
+            border: 1px solid black;
+        } */
+        main.main div.product_wraper div.newproduct_text > h2{
+            margin: 45px 0;
+            color: #AB6E13;
+            font-size: 30px;
+        }
+        main.main div.product_wraper div.newproduct{
+            display: flex;
+            /* border:  1px solid red; */
+            justify-content: space-evenly;
+            height: 235px;
+            /* margin-top: 45px; */
+        }
+        main.main div.product_wraper div.newproduct >div{
+            border: 2px solid black;
+            width: 194px;
+            background-color: white;
+            border-radius:10px;
+        }
+        main.main div.product_wraper div.newproduct  p{
+            font-size: 16px;
+        }
+        main.main div.product_wraper div.newproduct  a{
+            text-decoration: none;
+        }
+        main.main div.product_wraper div.newproduct div.a_pic >a ,img.a_pic{
+            /* border: 1px solid green; */
+            display: block;
+            width: 188px;
+            height: 157px;
+        }
+        main.main div.product_wraper div.newproduct div.b_pic >a ,img.b_pic{
+            display: block;
+            width: 188px;
+            height: 157px;
+        }
+        main.main div.product_wraper div.newproduct div.c_pic >a ,img.c_pic{
+            display: block;
+            width: 188px;
+            height: 157px;
+        }
+        main.main div.product_wraper div.newproduct div.d_pic >a ,img.d_pic{
+            display: block;
+            width: 188px;
+            height: 157px;
+        }
+         /* main.main div.product_wraper div.product_text{
+            border: 1px solid black;
+        } */
+        main.main div.product_wraper div.product_text > h2{
+            margin: 90px 0 45px 0;
+            color: #AB6E13;
+            font-size: 30px;
+        }
+        main.main div.product_wraper div.product_type{
+            display: flex;
+            /* border:  1px solid red; */
+            justify-content: space-evenly;
+            height: 235px;
+            /* margin-top: 45px; */
+        }
+        main.main div.product_wraper div.product_type >div{
+            width: 200px;
+            height: 230px;
+        }
+        main.main div.product_wraper div.product_type  p{
+            margin: 0;
+            font-size: 20px;
+        }
+        main.main div.product_wraper div.product_type  a{
+            text-decoration: none;
+        }
+        main.main div.product_wraper div.product_type div.type_b{
+            margin-top: 35px;
+        }
+        main.main div.product_wraper div.product_type  img{
+            border-radius: 100px;
+            width: 200px;
+            height: 200px;
+        }
+        main.main div.shop{
+            /* border: 1px solid red; */
+            width: auto;
+            height: 300px;
+            margin-top: 100px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: white;
+            background-image: url(./images/06.png);
+        }
+        main.main div.shop div.shop_text{
+            /* border: 1px solid black; */
+            display: inline-block;
+            padding-right:80px ;
+            color: #AB6E13;
+        }
+        main.main div.shop div.shop_pic{
+            /* border: 1px solid blue; */
+            display: inline-block;
+            padding-right: 30px;
+        }
+         
+    </style>
+  </head>
+  <body>
+      <header class="header">
+        <a href="#" class="shoppingcar"><img src="./images/cart.png" alt=""></a>
+        <a href="./member.html" class="man"><img src="./images/man.png" alt=""></a>
+      </header>
+
+      <div class="parent_container">
+        <aside class="aside">
+            <a href="./index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+            <nav class="nav">
+                <ul class="menu_list">
+                    <li><a href="./about.html"> 關於手帳</a></li>
+                    <li><a href="./product.html">全部商品</a></li>
+                    <li><a href="./product.html">手帳本</a></li>
+                    <li><a href="./product.html">紙膠帶</a></li>
+                    <li><a href="./product.html">其他工具</a></li>
+                    <li><a href="./shop.html">關於店舖</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="main">
+            <img src="./images/photo/pic_1.png" class="cover" alt="圖片加載中">
+            <div class="divider">
+                <!-- <img src="./images/divider.png" class="divider" alt=""> -->
+            </div> 
+            <div class="about_wraper">
+                <div class="about_pic">
+                    <img src="./images/photo/about_pic.jpg" class="about_pic" alt="">
+                </div>
+                <div class="about_text">
+                    <div class="text_box"><P>你知道手帳是什麼嗎？<br>你有紀錄生活的習慣嗎？<br>你有多久沒有好好的用紙筆記錄心情了呢？<br><br><a href="./about.html">瞭解更多 ></a></P></div>
+                </div>
+            </div>
+            <div class="announcement">
+                <table>
+                    <tr>
+                        <td class="right">全館消費滿600免運費！</td>
+                        <td>加入會員享更多福利！</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="product_wraper">
+                <div class="newproduct_text"><h2>❤️❤️❤️ 新品上架 ❤️❤️❤️</h2></div>
+                <div class="newproduct">
+                    <div class="a_pic">
+                        <a href="./productpage.html">
+                            <img src="./images/product/product_a.png" class="a_pic" alt="">
+                            <p>2022 寄思手帳 × 茄子先生 - ZZZ ZZZ</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./productpage.html">
+                            <img src="./images/product/product_b.png" class="b_pic" alt="">
+                            <p>2022 美好⼩⽇⼦⽔彩花兒⼿帳簿</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./productpage.html">
+                            <img src="./images/product/product_c.jpg" class="c_pic" alt="">
+                            <p>2022 手帳 「自由研究」</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./productpage.html">
+                            <img src="./images/product/product_d.png" class="d_pic" alt="">
+                            <p>2022 狐吉小狐狸手帳</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product_text"><h2>❤️❤️❤️ 產品類別 ❤️❤️❤️</h2></div>
+                <div class="product_type">
+                    <div class="type_a">
+                        <a href="./product.html">
+                            <img src="./images/product/type_a.jpg" class="type_a" alt="">
+                            <p>手帳本</p>
+                        </a>
+                    </div>
+                    <div class="type_b">
+                        <a href="./product.html">
+                            <img src="./images/product/type_b.jpg" class="type_b" alt="">
+                            <p>紙膠帶</p>
+                        </a>
+                    </div>
+                    <div class="type_c">
+                        <a href="./product.html">
+                            <img src="./images/product/type_c.jpg" class="type_c" alt="">
+                            <p>其他工具</p>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <div class="shop">
+                <div class="shop_text">
+                    <h2>狐塗帳</h2>
+                    <br>
+                    <p>電話: 02-28899999</p>
+                    <p>營業時間: 10:00~20:00(週三公休)</p>
+                    <p>地址: 237新北市三峽區國光街35號</p>
+                </div>
+                <div class="shop_pic">
+                    <img src="./images/photo/shop.jpg" alt="">
+                </div>
+            </div>          
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer_box">
+            <div class="shop_information">
+                <div class="tel"><p>電話：<br>02-28899999</p></div>
+                <div class="address"><p>地址:<br>237新北市三峽區國光街35號</p></div>
+                <div class="follow"><p>關注我：<a href="#"><img src="./images/facebook.png" alt=""><img src="./images/instagram-navi.png" alt=""></a></p></div>
+                <div class="QA"><a href="#"><p>Q & A</p></a></div>
+            </div>
+            <div class="tbm"><p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/"><p>[緯育TibaMe]</p></a>，後續會由專人協助處理
+            </p></div>
+            <div class="borrow"><p>參考網站：</p><a href="https://www.hellostudio-shop.co/pages/about"><p>Hello Studio 你好工作室 </p></a>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

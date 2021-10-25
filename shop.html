@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/productpage.css">
+
+    <style>
+        nav.nav ul.menu_list > li.ff::before{
+        content: url(./images/ICON1.png);
+        }
+        main.main div.cover> img{
+            width: 950px;
+            height: 356px;
+        }
+        main.main div.about_us{
+            /* border: 1px solid black; */
+            margin: 50px 0;
+            color:#ab6e13;
+        }
+        main.main div.about_us div.t{
+            /* border: 1px solid blueviolet; */
+            text-align: center;
+        }
+        main.main div.about_us div.t > h2{
+            margin: 0 auto;
+            font-size: 24px;
+            display: inline-block;
+            /* border: 1px solid blueviolet; */
+        }
+        main.main div.about_us div.c > p{
+            text-align: center;
+            font-size: 18px;
+            text-shadow: 0px 0px 10px brown;
+        }
+        main.main div.news div.t{
+            /* border: 1px solid blue; */
+            text-align: center;
+        }
+        main.main div.news div.t >h2{
+            margin: 20px auto;
+            font-size: 20px;
+            display: inline-block;
+            /* border: 1px solid blueviolet; */
+        }
+        main.main div.news div.news_content{
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            display: flex;
+            width: 950px;
+            height: auto;
+            justify-content: space-evenly;
+        }
+        main.main div.news div.news_content div{
+            width: 188px;
+            height: 188px;
+            /* border: 1px solid green; */
+            overflow: hidden;
+            text-align: center;
+            transition: height .5s;
+            background-color: rgba(255, 255, 255, .6);
+        }
+        main.main div.news div.news_content div:hover{
+            height: 370px;
+        }
+        main.main div.news div.news_content div img{
+            width: 188px;
+            height: 188px;
+        }
+        main.main div.news div.news_content div p{
+            font-size: 16px;
+            width: 150px;
+            margin: 0;
+        }
+        main.main div.shop{
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid green; */
+            margin-top: 100px;
+            margin-bottom: 100px;
+            
+
+        }
+        main.main div.shop div.shop_pic >img{
+            width: 500px;
+            height: 345px;
+        }
+        main.main div.shop div.shop_text {
+            width: 350px;
+            height: 345px;
+            /* border: 1px solid blue; */
+            text-align: center;
+            color: #ab6e13;
+            background-color: rgba(255, 255, 255, .6);
+        }
+        main.main div.shop div.shop_text>h2{
+            margin: 20px;
+            font-size:24px;  
+            line-height: 4;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="shoppingcar"><img src="./images/cart.png" alt=""></a>
+        <a href="./member.html" class="man"><img src="./images/man.png" alt=""></a>
+      </header>
+
+      <div class="parent_container">
+        <aside class="aside">
+            <a href="./index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+            <nav class="nav">
+                <ul class="menu_list">
+                    <li><a href="./about.html"> 關於手帳</a></li>
+                    <li><a href="./product.html">全部商品</a></li>
+                    <li><a href="./product.html">手帳本</a></li>
+                    <li><a href="./product.html">紙膠帶</a></li>
+                    <li><a href="./product.html">其他工具</a></li>
+                    <li class="ff"><a href="./shop.html">關於店舖</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="main">
+            <div class="cover">
+                <img src="./images/aboutme/cover.png" alt="" class="cover">
+            </div>
+            <div class="about_us">
+                <div class="t"><h2>狐塗帳</h2></div>
+                <div class="c"><p>在忙碌的生活中，給你一點點沉澱的空間。<br>用可愛的插畫和小物走進你的日常。<br>
+                    你也可以在閒暇之餘、睡覺之前回憶一天的苦和甜，<br>讓手帳幫你記住那些枝微末節的生活軌跡吧！<br>
+                    希望我們販賣給你的不只是能使用的文具，還是能療癒你的生活小物。</p>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="t"><h2>活動資訊</h2>
+                </div>
+                <div class="news_content">
+                    <div class="a">
+                        <img src="./images/aboutme/d.png" alt="">
+                        <p>9/20 台北松菸 自己印市集<br>
+                            日期：9/20 (日)<br>
+                            時間：10:30 - 18:30<br>
+                            地點：松山文創園區1號倉庫<br>
+                            攤位號碼：C09</p>
+                    </div>
+                    <div class="b">
+                        <img src="./images/aboutme/cc.jpg" alt="">
+                        <p>還記得去年的夏日快閃店，曾經做過一個企劃「寄一張明信片，給未來的自己」嗎？​<br>
+                            就在今天我們已經全數寄出囉!</p>
+                    </div>
+                    <div class="c">
+                        <img src="./images/aboutme/b.png" alt="">
+                        <p>\ 睽違已久的市集 /<br>週會在東區的顆顆書店市集快閃一日<br>一起來逛逛吧！</p>
+                    </div>
+                    <div class="d">
+                        <img src="./images/aboutme/e.png" alt="">
+                        <p>6/19是本店的最後出貨日！<br>工作室要進行為期兩週的整修。<br>也任何問題仍然可以為大家獻上解惑唷！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shop">
+                <div class="shop_pic">
+                    <img src="./images/aboutme/shop.jpg" alt="">
+                </div>
+                <div class="shop_text">
+                    <h2>狐狸帳</h2>
+                    <p>電話: 02-28899999<br><br>
+                        營業時間: 10:00~20:00(週三公休)<br>如有異動請詳見官網<br><br>
+                        地址: 237新北市三峽區國光街35號</p>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer_box">
+            <div class="shop_information">
+                <div class="tel"><p>電話：<br>02-28899999</p></div>
+                <div class="address"><p>地址:<br>237新北市三峽區國光街35號</p></div>
+                <div class="follow"><p>關注我：<a href="#"><img src="./images/facebook.png" alt=""><img src="./images/instagram-navi.png" alt=""></a></p></div>
+                <div class="QA"><a href="#"><p>Q & A</p></a></div>
+            </div>
+            <div class="tbm"><p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/"><p>[緯育TibaMe]</p></a>，後續會由專人協助處理
+            </p></div>
+            <div class="borrow"><p>參考網站：</p><a href="https://www.hellostudio-shop.co/pages/about"><p>Hello Studio 你好工作室 </p></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+    
+</body>
+</html>

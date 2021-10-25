@@ -1,0 +1,35 @@
+@import"./common/header.css";
+@import"./common/footer.css"; 
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* background-color: #F6D47B; */
+    background-image:url(../images/back/back01.jpg) ;
+    background-repeat: repeat;
+    background-position: right; ;
+}
+div.parent_container{
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    font-size: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.parent_container aside.aside, div.parent_container main.main{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+div.parent_container main.main{
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    margin-left: 250px;
+    background-image: url(../images/back/back111.png);
+    background-repeat: repeat;
+}
+/* ------------------------------------------------ */

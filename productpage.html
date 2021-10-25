@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/productpage.css">
+
+    <style>
+    nav.breadcrumb{
+        /* border: 1px solid black; */
+        padding: 5px 10px;
+        margin: 10px;
+    }
+    nav.breadcrumb ol.breadcrumb_list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+    }
+    nav.breadcrumb ol.breadcrumb_list > li{
+        /* border: 1px solid red; */
+        display: inline-block;
+        color: #ab6e13;
+        font-size: 16px;
+    }
+    nav.breadcrumb ol.breadcrumb_list > li::before{
+        content: "/";
+        font-size: 18px;
+        color: black;
+        margin: 0 10px;
+    }
+    nav.breadcrumb ol.breadcrumb_list > li:first-child::before{
+        display: none;
+    }
+    nav.breadcrumb ol.breadcrumb_list > li > a{
+        /*   border: 1px solid blue; */
+        text-decoration: none;
+        display: inline-block;
+        color:  #ab6e13;
+       
+    }
+    div.parent_container main.main div.product_wrapper div.a{
+        /* border: 1px solid blue; */
+        width: 950px;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, .5);
+        margin-bottom: 50px;
+    }
+    div.parent_container main.main div.product_wrapper div.a div.apic{
+        display: inline-block;
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        /* border: 1px solid black; */
+        padding: 30px;
+        gap: 20px;
+        width: 420px;
+        margin: 0;
+        /* background-color: white; */
+        vertical-align: top;
+    }
+     main.main div.product_wrapper div.a div.apic div{
+         /* border: 1px solid red; */
+        width: 100px;
+        height: 100px;
+    }
+    main.main div.product_wrapper div.a div.apic div.aa img.a{
+        background-size: cover;
+        width: 350px;
+    } 
+    main.main div.product_wrapper div.a div.apic div img.b, img.c ,img.d{
+        width: 100px;
+    }
+    main.main div.product_wrapper div.a div.apic  div.aa{
+        grid-column: 1 / 4;
+        width: 350px;
+        height: 350px;
+    }
+    main.main div.product_wrapper div.a div.atext{
+        /* border: 1px solid green; */
+        display: inline-block;
+        width: 420px;
+        height: auto;
+        padding: 20px;
+        margin: 0 40px;
+       
+        /* background-image: url(./images/11.png); */
+    }
+    main.main div.product_wrapper div.a div.atext h2{
+        font-size: 30px;
+        text-align: center;
+        color:#ab6e13;
+    }
+    main.main div.product_wrapper div.a div.atext >p{
+        font-size: 18px;
+        /* color: #FDA04A; */
+    }
+    main.main div.product_wrapper div.a div.atext div >p{
+        font-size: 18px;
+        /* color: #FDA04A; */
+    }
+    main.main div.product_wrapper div.a div.atext p.price{
+        font-size: 24px;
+        text-align: center;
+    }
+    main.main div.product_wrapper div.a div.atext form div.input{
+        font-size: 18px;
+        text-align: center;
+    }
+    main.main div.product_wrapper div.a div.atext form input{
+        width: 140px;
+        height: 20px;
+         background-color: #FBEECF;
+    }
+    main.main div.product_wrapper div.a div.atext form button{
+        margin: 20px 0px 20px 25px;
+        padding: 0 10px;
+        width: 150px;
+        height: 45px;
+        border: 1px solid #f6d47b;
+        border-radius:45px ;
+        background-color: #F6D47B;
+    }
+    main.main div.product_wrapper div.a div.atext form button >p{
+        font-size: 16px;
+        margin: 0;
+        color: #ab6e13;
+    }
+    main.main div.product_wrapper div.a div.atext form button:hover{
+        cursor: pointer;
+        background-color: #ab6e13;
+        color: white;
+    }
+    main.main div.product_wrapper div.b{
+        /* border: 1px solid blue; */
+        width: 950px;
+        background-color: rgba(255, 255, 255, .5);
+    }
+    main.main div.product_wrapper div.b p{
+        font-size: 18px;
+        color: #FDA04A;
+    }
+    main.main div.product_wrapper div.b div.ba >h2{
+        /* border: 1px solid blueviolet; */
+        margin: 50px auto;
+        font-size: 24px;
+        text-align: center;
+        color: #ab6e13;
+    }
+    main.main div.product_wrapper div.b div.bb{
+        /* border: 1px solid blueviolet; */
+        margin: 10px auto;
+        font-size: 18px;
+        text-align: center;
+        color: #FDA04A;
+    }
+    main.main div.product_wrapper div.b div.bc >img{
+        width: 950px;
+        height: 300px;
+        background-size: cover;
+    }
+    main.main div.product_wrapper div.b div.bd >img{
+        width: 350px;
+        height: 350px;
+        background-size: cover;
+        display: inline-block;
+        margin: 50px;
+    }
+    main.main div.product_wrapper div.b div.bd >p{
+        /* border: 1px solid red; */
+        width: auto;
+        display: inline-block;
+        margin: 120px 50px;
+        vertical-align: top;
+        line-height: 2;
+    }
+    main.main div.product_wrapper div.b div.be{
+        margin-bottom:100px ;
+    }
+    main.main div.product_wrapper div.b div.be >img{
+        width: 350px;
+        height: 350px;
+        background-size: cover;
+        display: inline-block;
+        margin: 50px 40px;
+    }
+    main.main div.product_wrapper div.b div.be >p{
+        /* border: 1px solid red; */
+        width: 380px;
+        display: inline-block;
+        margin: 120px 30px 120px 90px;
+        vertical-align: top;
+        text-indent: 2em;
+        font-size: 18px;
+        color: #FDA04A;
+        line-height: 2;
+    }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="shoppingcar"><img src="./images/cart.png" alt=""></a>
+        <a href="./member.html" class="man"><img src="./images/man.png" alt=""></a>
+      </header>
+
+      <div class="parent_container">
+        <aside class="aside">
+            <a href="./index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+            <nav class="nav">
+                <ul class="menu_list">
+                    <li><a href="./about.html"> 關於手帳</a></li>
+                    <li><a href="./product.html">全部商品</a></li>
+                    <li><a href="./product.html">手帳本</a></li>
+                    <li><a href="./product.html">紙膠帶</a></li>
+                    <li><a href="./product.html">其他工具</a></li>
+                    <li><a href="./shop.html">關於店舖</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="main">
+            <nav class="breadcrumb">
+                <ol class="breadcrumb_list"> 
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="./product.html">全部商品</a></li>
+                    <li><a href="./productpage.html">2022狐吉小狐狸手帳</a></li>
+                </ol>
+            </nav>
+            <div class="product_wrapper">
+                <div class="a">
+                    <div class="apic">
+                        <div class="aa">
+                            <img class="a" src="./images/ac/aa.png" alt="">
+                        </div>
+                        <div class="ab">
+                            <img class="b" src="./images/ac/aaa.png" alt="">
+                        </div>
+                        <div class="ac">
+                            <img class="c" src="./images/ac/abb.png" alt="">
+                        </div>
+                        <div class="ad">
+                            <img class="d" src="./images/ac/acc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="atext">
+                        <div><h2>2022狐吉小狐狸手帳</h2></div>
+                        <div>
+                            <p>俏皮活潑的小狐狸狐吉，帶著滿滿的手繪插圖，陪你一起踏入插畫與手帳的美好世界，準備陪伴你的2022年&#9835<br><br>
+                                &#10022 年度展望新目標記事、年度甘特圖計畫<br>
+                            &#10022 旅行必備的台灣插畫地圖<br>
+                            &#10022 每年都有新亮點—Stay home居家時光小插圖<br>
+                            &#10022 Checklist 以及橫線空白頁等實用頁面</p>
+                        </div>
+                        <p class="price">NT$600</p>
+                        <form  class="buy_form" action="#" method="#">
+                            <div class="input">
+                                <label class="item" for="">數量：</label>
+                                <input type="number" class="buy" value="1" min="1">
+                            </div>
+                            <div>
+                                <button type="button" class="car"><p>加入購物車</p></button>
+                                <button type="button" class="gobuy"><p>立即結帳</p></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="b">
+                    <div class="ba"><h2>商品描述</h2>
+                    </div>
+                    <div class="bb">
+                        <p>俏皮活潑的小狐狸狐吉，帶著滿滿的手繪插圖，<br>一起踏入插畫與手帳的美好世界，準備陪伴你的2022年！</p>
+                        <p>：2022狐吉小狐狸手帳早鳥限定優惠價：<br>
+                            2021/08/13 至 2021/10/31 止 <br>
+                            早鳥價 480 元<br>
+                            （未來定價520元，現省40元）</p>
+                    </div>
+                    <div class="bc">
+                        <img src="./images/productpage_b/banner.png" alt="">
+                    </div>
+                    <div class="bd">
+                        <img src="./images/productpage_b/bd.png" alt="">
+                        <p>&#9834全彩列印，可完全平攤書寫!<br>
+                            &#9834內頁編排為1-12月份之月計畫。<br>
+                            &#9834標註國定假日、農曆初一、十五。<br>
+                            &#9834專屬PVC霧面封套及筆套，攜帶便利。<br>
+                            &#9834特殊雙封面設計!翻轉封面，及可更換書皮。<br>
+                            &#9834精美刺繡書籤繩，翻頁紀錄更便利。<br>
+                            &#9834贈送雙面彩色墊板、加透明割型貼紙。
+                        </p>
+                    </div>
+                    <div class="be">
+                        <p>12個跨頁的月計畫個跨頁的月計畫&一周兩頁的週計畫，左頁週計畫&右頁FreeNote，有充足呃發揮空間。<br>
+                            &emsp;&emsp;精心繪製的全新插圖，每一頁都有俏皮的狐吉，陪伴你的記事，一起隨心所欲的紀錄。一起隨心所欲的紀錄。</p>
+                        <img src="./images/productpage_b/be.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer_box">
+            <div class="shop_information">
+                <div class="tel"><p>電話：<br>02-28899999</p></div>
+                <div class="address"><p>地址:<br>237新北市三峽區國光街35號</p></div>
+                <div class="follow"><p>關注我：<a href="#"><img src="./images/facebook.png" alt=""><img src="./images/instagram-navi.png" alt=""></a></p></div>
+                <div class="QA"><a href="#"><p>Q & A</p></a></div>
+            </div>
+            <div class="tbm"><p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/"><p>[緯育TibaMe]</p></a>，後續會由專人協助處理
+            </p></div>
+            <div class="borrow"><p>參考網站：</p><a href="https://www.hellostudio-shop.co/pages/about"><p>Hello Studio 你好工作室 </p></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

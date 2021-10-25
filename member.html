@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/member.css">
+
+    <style>
+        /* breadcrumb */
+        nav.breadcrumb{
+        /* border: 1px solid black; */
+        padding: 5px 10px;
+        margin: 10px;
+    }
+    nav.breadcrumb ol.breadcrumb_list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+    }
+    nav.breadcrumb ol.breadcrumb_list > li{
+        /* border: 1px solid red; */
+        display: inline-block;
+        color: #ab6e13;
+        font-size: 16px;
+    }
+    nav.breadcrumb ol.breadcrumb_list > li::before{
+        content: "/";
+        font-size: 18px;
+        color: black;
+        margin: 0 10px;
+    }
+    nav.breadcrumb ol.breadcrumb_list > li:first-child::before{
+        display: none;
+    }
+    nav.breadcrumb ol.breadcrumb_list > li > a{
+        /*   border: 1px solid blue; */
+        text-decoration: none;
+        display: inline-block;
+        color:  #ab6e13;
+    }
+    /* breadcrumb */
+     div.parent_container main.main div.cover{
+         /* border: 1px solid red; */
+        width: 950px;
+        height: auto;
+    }
+    div.parent_container main.main div.cover >img{
+        width: 950px;
+    }
+    main.main div.content{
+        width: 700px;
+        /* border: 1px solid red; */
+        border-radius: 150px 150px 150px 150px;
+        background-color: white;
+        display: flex;
+        margin: 100px 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    main.main div.content div.content_pic > img{
+        width: 350px;
+        background-size: cover;
+        border-radius: 150px 0px 0px 150px;
+    }
+    main.main div.content div.content_form{
+        width: 350px;
+    }
+    main.main div.content div.content_form div.t >h2{
+        font-size: 24px;
+        color: #ab6e13;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    main.main div.content div.content_form form.form{
+        color: #ab6e13;
+        font-size: 18px;
+        width: 260px;
+        margin: 0 auto;
+
+    }
+    main.main div.content div.content_form form.form input{
+        width: 200px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: white;
+        border:1px solid black;
+        margin: 5px auto;
+        font-size: 14px;
+    }
+    main.main div.content div.content_form form.form >button{
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #F6D47B;
+        border: 1px solid brown;
+        margin: 20px 20px 0px 120px;
+        
+        
+    }
+    main.main div.content div.content_form form.form  button >p{
+        margin: 0;
+        font-size: 16px;
+    }
+    main.main div.content div.content_form form.form >a{
+        margin: 0;
+        text-decoration: none;
+    }
+    main.main div.content div.content_form form.form  a >p{
+        margin: 15px;
+        font-size: 16px;
+        text-align: right;
+        color: #ab6e13;
+    }
+
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="shoppingcar"><img src="./images/cart.png" alt=""></a>
+        <a href="./member.html" class="man"><img src="./images/man.png" alt=""></a>
+      </header>
+
+      <div class="parent_container">
+        <aside class="aside">
+            <a href="./index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+            <nav class="nav">
+                <ul class="menu_list">
+                    <li><a href="./about.html"> 關於手帳</a></li>
+                    <li><a href="./product.html">全部商品</a></li>
+                    <li><a href="./product.html">手帳本</a></li>
+                    <li><a href="./product.html">紙膠帶</a></li>
+                    <li><a href="./product.html">其他工具</a></li>
+                    <li><a href="./shop.html">關於店舖</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="main">
+            <nav class="breadcrumb">
+                <ol class="breadcrumb_list"> 
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="./product.html">會員登入</a></li>
+                </ol>
+            </nav>
+            <div class="cover">
+                <img src="./images/member/member.png" alt="">
+            </div>
+            <div class="content">
+                <div class="content_pic">
+                    <img src="./images/member/member_b.jpg" alt="">
+                </div>
+                <div class="content_form">
+                    <div class="t"><h2>會員登入</h2></div>
+                    <form class="form" action="#">
+                        <div class="username">
+                            <label for="username">帳號：</label>
+                            <input type="text" name="username" value="" placeholder="請輸入帳號" id="username">
+                        </div>
+                        <div class="password">
+                           <label for="password">密碼：</label>
+                           <input type="password" name="password" value="" placeholder="請輸入密碼" id="password">
+                        </div>
+                        <button><p>登入</p></button>
+                        <a href="#"><p>忘記密碼？</p></a>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer_box">
+            <div class="shop_information">
+                <div class="tel"><p>電話：<br>02-28899999</p></div>
+                <div class="address"><p>地址:<br>237新北市三峽區國光街35號</p></div>
+                <div class="follow"><p>關注我：<a href="#"><img src="./images/facebook.png" alt=""><img src="./images/instagram-navi.png" alt=""></a></p></div>
+                <div class="QA"><a href="#"><p>Q & A</p></a></div>
+            </div>
+            <div class="tbm"><p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/"><p>[緯育TibaMe]</p></a>，後續會由專人協助處理
+            </p></div>
+            <div class="borrow"><p>參考網站：</p><a href="https://www.hellostudio-shop.co/pages/about"><p>Hello Studio 你好工作室 </p></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+    
+</body>
+</html>

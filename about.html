@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>關於手帳</title>
+    <link rel="stylesheet" href="./css/about.css">
+
+
+    <style>
+
+        div.parent_container main.main img.cover_b{
+            width: 950px;
+            height: 500px;
+            background-size: cover;
+            display: block;
+            margin: 0;
+        }
+         div.parent_container main.main div.divider_b{
+            /* border:  1px solid black; */
+            height: 45px;
+            /* background-color: white; */
+            background-image: url(./images/divider_b.png);
+            background-repeat:repeat-x ;
+            background-position: center;
+            margin: 15px 40px;
+            padding: 5px 0 5px ;
+        } 
+        main.main div.about_a{
+            /* border: 1px solid green; */
+            width: 950px;
+            height:auto;
+            display: block;
+            margin-top: 40px;
+        }
+        main.main div.about_a div.about_apic{
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+            z-index: 60;
+        }
+        main.main div.about_a div.about_apic >img{
+            width: 396px;
+            height: 386px;
+            margin: 50px 40px 0 40px;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px 0px gray;
+        }
+        main.main div.about_a div.about_atext div.h {
+            background-image: url(./images/icon4.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            padding: 5px 30px;
+        }
+        main.main div.about_a div.about_atext div.h h2 {
+            /* border: 1px solid red; */
+            text-align: center;
+            margin: 0 ;
+            color: #AB6E13;
+            text-shadow: 0px 0px 10px white;
+        }
+        main.main div.about_a div.about_atext{
+            /* border: 1px solid yellow; */
+            display: inline-block;
+            width: 420px;
+            /* height: auto; */
+            line-height: 1.5;
+            margin: 40px 0 0 0; 
+            text-align: center;
+            padding: 20px;
+        }
+        main.main div.about_a div.about_atext div >p {
+            text-indent: 2em;
+            text-align: left;
+            text-shadow: 0px 0px 10px gray;
+        }
+        main.main div.about_b{
+            /* border: 1px solid green; */
+            width: 950px;
+            height:auto;
+            display: block;
+        }
+        main.main div.about_b div.about_btext div.bh {
+            /* background-color: #F6D47B; */
+            background-image: url(./images/icon4.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            /* border-radius: 30px; */
+            display: inline-block;
+            padding: 5px 30px;
+        }
+        main.main div.about_b div.about_btext div.bh h2 {
+            /* border: 1px solid red; */
+            text-align: center;
+            margin: 0 ;
+            color: #AB6E13;
+            text-shadow: 0px 0px 10px white;
+        }
+        main.main div.about_b div.about_btext div >p {
+            text-indent: 2em;
+            text-align: left;
+            text-shadow: 0px 0px 10px gray;
+        }
+        main.main div.about_b div.about_btext{
+            /* border: 1px solid yellow; */
+            display: inline-block;
+            width: 500px;
+            /* height: auto; */
+            line-height: 1.5;
+            margin: 40px 0px 80px 40px; 
+            text-align: center;
+            padding: 20px;
+        }
+        main.main div.about_b div.about_bpic{
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: bottom;
+            margin-bottom: 20px;
+        }
+        main.main div.about_b div.about_bpic >img{
+            width: 350px;
+            height: 350px;
+            margin: 0px 40px 0 0;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px 0px gray;
+            transform: rotate(10deg);
+            transform-origin: 50% 50%;
+        }
+        main.main div.c{
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            /* background-color: white; */
+        }
+        main.main div.c div{
+            /* border: 1px solid red; */
+            margin: auto;
+            width: auto;
+            height: auto;
+        }
+        main.main div.c div.ca >img{
+            width: 100px;
+            height: 100px;
+        }
+        main.main div.c div.ch >a{
+            text-decoration: none;
+        }
+        main.main div.c div.ch a >p{
+            /* border: 1px solid red; */
+            font-size: 14px;
+            margin: 0;
+            color: #AB6E13;
+            transform: translate(20%, 110%); 
+        }
+        main.main div.c div.cc, div.ce{
+            transform: translate(0%, 50%); 
+        }
+        main.main div.c div.cb, div.cd ,div.cf{
+            transform: translate(0%, -50%); 
+        }
+        
+    </style>
+
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="shoppingcar"><img src="./images/cart.png" alt=""></a>
+        <a href="./member.html" class="man"><img src="./images/man.png" alt=""></a>
+    </header>
+    <div class="parent_container">
+        <aside class="aside">
+            <a href="./index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+            <nav class="nav">
+                <ul class="menu_list">
+                    <li class="aa"><a href="./about.html"> 關於手帳</a></li>
+                    <li><a href="./product.html">全部商品</a></li>
+                    <li><a href="./product.html">手帳本</a></li>
+                    <li><a href="./product.html">紙膠帶</a></li>
+                    <li><a href="./product.html">其他工具</a></li>
+                    <li><a href="./shop.html">關於店舖</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main">
+            <div class="B">
+                <img src="./images/photo/about_b.jpg" class="cover_b" alt="">
+            </div>
+            
+            <div class="about_a">
+                <div class="about_apic">
+                    <img src="./images/photo/about_aa.jpg" alt="">
+                </div>
+                <div class="about_atext">
+                    <div class="h"><h2>手帳起源</h2>
+                    </div>
+                    <div><p>手帳，來源於日本，本意是指隨身攜帶、隨時記事的一個本子。在日本，無論男女老少，幾乎每人都會隨身攜帶一個被稱爲『手帳』的記事本，隨時翻看 、或在本子上記錄些什麼。</p>
+                        <p>據說，手帳在明治時期就已經出現。它最早是爲政府和軍隊官員特別設計的，作爲」行程記錄本「供其使用，在很久以前就傳入中國並不斷流傳下來。發展至今，手帳的用途和類型已經非常豐富了。</p>
+                        <p>手帳區別於寫日記，在於更側重於回憶、計劃和記錄，它可以成爲我們的日程本、工作計劃、備忘錄、單詞本、帳本、剪貼本等等。總而言之，手帳可以說是一種極好的生活方式，它適合所有人。</p>
+                       <p>最簡單的手帳，只需要一個本子一支筆就可以了，手帳通過文字、繪畫、貼畫等方式，記錄我們的工作、學習和生活，讓我們可以高效有計劃的工作，記錄豐富多彩的生活，也擁有珍藏的回憶。其實手帳是一種生活態度，是對美好生活的追求。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="divider_b" >
+                    <!-- <img src="./images/divider_b.png" class="divider_b" alt=""> -->
+            </div>
+            <div class="about_b">
+                <div class="about_btext">
+                    <div class="bh"><h2>什麼是手帳？</h2>
+                    </div>
+                    <div>
+                        <p>很多人第一次接觸到手帳都會問，手帳是什麼，是記賬麼？是日記麼？都會做的很好看麼？要買很多膠帶貼紙嘛？</p>
+                        <p>其實手帳通俗的來說，就像開頭說到的，是用來記事情的本子，當然現在也有很多關於手帳的APP，我這裏說的還是紙質版的手帳形式啦。</p>
+                        <p>手帳從內容上來說，可以是日記本、記賬本、閱讀筆記本、觀影筆記本、健身打卡本、菜譜本；從功能看，主要分爲記錄和計劃。記錄顧名思義就是記下所有想記錄的東西，而計劃，就是利用各種月計劃、周計劃、時間軸等達到安排事情的目的；從形式上來說，可以有活頁本、定頁本、TN本；從尺寸上也有A5/B5/A6等等。</p>
+                        <p>很多人關注到手帳可能是因爲羨慕別人做的很好看的拼貼，想要動手創造屬於自己的美好；或是覺得日常生活有太多開心或不開心的的事情，想要用一個小本本記錄下自己的點滴；或者就是想拿一個本子開始列一些計劃，好安排日常瑣事，這些都可以是你開始手帳生活的原因。</p>
+                    </div>
+                </div>
+                <div class="about_bpic">
+                    <img src="./images/photo/about_bb.jpg" alt="">
+                </div>
+            </div>
+            <div class="c">
+                <div class="ca"><img src="./images/text/text0.png" alt=""></div>
+                <div class="cb"><img src="./images/text/text1.png" alt=""></div>
+                <div class="cc"><img src="./images/text/text2.png" alt=""></div>
+                <div class="cd"><img src="./images/text/text3.png" alt=""></div>
+                <div class="ce"><img src="./images/text/text4.png" alt=""></div>
+                <div class="cf"><img src="./images/text/text5.png" alt=""></div>
+                <div class="cg"><img src="./images/text/text6.png" alt=""></div>
+                <div class="ch"><a href="./aboutpag.html"><p> 更多帳教學 >></p></a></div>
+            </div>
+
+        </main>
+</div>
+<footer class="footer">
+    <div class="footer_box">
+        <div class="shop_information">
+            <div class="tel"><p>電話：<br>02-28899999</p></div>
+            <div class="address"><p>地址:<br>237新北市三峽區國光街35號</p></div>
+            <div class="follow"><p>關注我：<a href="#"><img src="./images/facebook.png" alt=""><img src="./images/instagram-navi.png" alt=""></a></p></div>
+            <div class="QA"><a href="#"><p>Q & A</p></a></div>
+        </div>
+        <div class="tbm"><p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/"><p>[緯育TibaMe]</p></a>，後續會由專人協助處理
+        </p></div>
+        <div class="borrow"><p>參考網站：</p><a href="https://www.hellostudio-shop.co/pages/about"><p>Hello Studio 你好工作室 </p></a>
+        </div>
+    </div>
+</footer>
+      
+    
+</body>
+</html>

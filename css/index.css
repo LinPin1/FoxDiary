@@ -1,0 +1,14 @@
+@import"./common/header.css";
+@import"./common/footer.css"; 
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* background-color: #F6D47B; */
+    background-image:url(../images/back/back01.jpg) ;
+    /* background-image: url(./images/06.png); */
+    background-repeat: repeat;
+    /* background-position: right; */
+}

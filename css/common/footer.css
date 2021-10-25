@@ -1,0 +1,61 @@
+   /* footer */
+   footer.footer{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* width: 100%; */
+    height: auto;
+    margin: 0 auto;
+    /* margin-top: 20px; */
+    background-color: #AB6E13;
+    /* position: sticky; */
+    position: absolute;
+    z-index: 50;
+}
+footer.footer div.footer_box div.shop_information{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer.footer div.footer_box div.shop_information div p{
+    color: white;
+    font-size: 18px;
+}
+footer.footer div.footer_box div.shop_information div img{
+    margin: 5px;
+    vertical-align: middle;
+}
+footer.footer div.footer_box div.shop_information div a{
+    text-decoration: none;
+}
+footer.footer div.footer_box div.tbm{
+    /* border: 1px solid white; */
+    width: 1040px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 14px;
+}
+footer.footer div.footer_box div.tbm >a{
+    text-decoration: none;
+    color: black;
+}
+footer.footer div.footer_box div.tbm p >a{
+    margin: 0;
+    color: black;
+} 
+footer.footer div.footer_box div.tbm p{
+    display: inline-block;
+    margin: 0;
+    color: black;
+} 
+footer.footer div.footer_box div.borrow{
+    margin: 0;
+    text-align: center;
+}           
+footer.footer div.footer_box div.borrow p{
+    margin: 0;
+    display: inline-block;
+    color: black;
+
+
+}
