@@ -12,3 +12,244 @@ body{
     background-repeat: repeat;
     /* background-position: right; */
 }
+/* --------------------- */
+
+div.parent_container{
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    font-size: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div.parent_container aside.aside, div.parent_container main.main{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+div.parent_container main.main{
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    margin-left: 250px;
+    background-color: #FFF3E1;
+    background-image: url(../images/back/back01.jpg);
+    background-repeat:repeat ;
+}
+div.parent_container main.main  img.cover{
+    width: 950px;
+    height: 600px;
+    background-size: cover;
+    /* border-radius: 75px; */
+    display: block;
+    margin: 0;
+}
+ div.parent_container main.main div.divider{
+    height: 33px;
+    /* border: 1px solid black; */
+    background-image: url(../images/divider2.png);
+    background-repeat:no-repeat ;
+    margin: 66px 50px 50px 50px;
+}
+main.main div.about_wraper{
+    /* border: 1px solid black; */
+    font-size: 0;
+    display: block;
+    background-image: url(../images/06.png);
+    padding-bottom: 50px;
+}
+main.main div.about_wraper div.about_pic, div.about_text{
+   /* border: 1px solid blue; */
+    font-size: 0;
+    display: inline-block;
+}
+main.main div.about_wraper div.about_pic{
+    width: 450px;
+    height: 350px;
+    margin-left: 70px;
+    margin-top: 73px;
+    /* z-index: 2; */
+    position: absolute;
+    z-index: 20;
+}
+main.main div.about_wraper div.about_pic > img.about_pic{
+    display: inline-block;
+    background-size: cover ;
+    width: 450px;
+    height: 350px;
+}
+main.main div.about_wraper div.about_text{
+    width: 525px;
+    height: 397px;
+    display: inline-block;
+    margin-left: 350px;
+    margin-top: 150px;
+    /* position: absolute; */
+    z-index: 10;
+}
+main.main div.about_wraper div.about_text div.text_box{
+    border:1px solid white;
+    background-color:  white;
+    border-radius: 20px;
+
+}
+main.main div.about_wraper div.about_text div.text_box >p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    margin: 59px 100px 59px 200px;
+    text-shadow: 0px 0px 10px gray;
+}
+main.main div.about_wraper div.about_text div.text_box p a{
+    text-decoration: none;
+    color: #ab6e13;
+}
+main.main div.announcement{ 
+    /* border: 1px solid black; */
+    font-size: 0px;
+    color: #AB6E13;
+    margin: auto ;
+}
+main.main div.announcement > table {
+    /* border: 1px solid black; */
+    font-size: 24px;
+    /* border-collapse: collapse; */
+    display: block;
+    background-color: #FFF3E1;
+    padding: 20px 0 20px 0;
+    /* margin-top: 66px; */
+}
+main.main div.announcement > table >tr,td{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    height: 60px;
+    padding-left: 110px;
+    padding-right: 100px;
+}
+main.main div.announcement  table td.right{
+    border-right:5px solid white;
+}    
+/*  產品區  */
+main.main div.product_wraper{
+    /* border: 1px solid red; */
+    width: 954px;
+    height: 900px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 45px;
+    background-color: white;
+    background-image: url(../images/photo/product_back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+/* main.main div.product_wraper div.newproduct_text{
+    border: 1px solid black;
+} */
+main.main div.product_wraper div.newproduct_text > h2{
+    margin: 45px 0;
+    color: #AB6E13;
+    font-size: 30px;
+}
+main.main div.product_wraper div.newproduct{
+    display: flex;
+    /* border:  1px solid red; */
+    justify-content: space-evenly;
+    height: 235px;
+    /* margin-top: 45px; */
+}
+main.main div.product_wraper div.newproduct >div{
+    border: 2px solid black;
+    width: 194px;
+    background-color: white;
+    border-radius:10px;
+}
+main.main div.product_wraper div.newproduct  p{
+    font-size: 16px;
+}
+main.main div.product_wraper div.newproduct  a{
+    text-decoration: none;
+    color: black;
+}
+main.main div.product_wraper div.newproduct div.a_pic >a ,img.a_pic{
+    /* border: 1px solid green; */
+    display: block;
+    width: 188px;
+    height: 157px;
+}
+main.main div.product_wraper div.newproduct div.b_pic >a ,img.b_pic{
+    display: block;
+    width: 188px;
+    height: 157px;
+}
+main.main div.product_wraper div.newproduct div.c_pic >a ,img.c_pic{
+    display: block;
+    width: 188px;
+    height: 157px;
+}
+/* main.main div.product_wraper div.newproduct div.c_pic >a,img.pic:hover{
+    background-image: u;
+
+} */
+main.main div.product_wraper div.newproduct div.d_pic >a ,img.d_pic{
+    display: block;
+    width: 188px;
+    height: 157px;
+}
+ /* main.main div.product_wraper div.product_text{
+    border: 1px solid black;
+} */
+main.main div.product_wraper div.product_text > h2{
+    margin: 90px 0 45px 0;
+    color: #AB6E13;
+    font-size: 30px;
+}
+main.main div.product_wraper div.product_type{
+    display: flex;
+    /* border:  1px solid red; */
+    justify-content: space-evenly;
+    height: 235px;
+    /* margin-top: 45px; */
+}
+main.main div.product_wraper div.product_type >div{
+    width: 200px;
+    height: 230px;
+}
+main.main div.product_wraper div.product_type  p{
+    margin: 0;
+    font-size: 20px;
+}
+main.main div.product_wraper div.product_type  a{
+    text-decoration: none;
+    color: black;
+}
+main.main div.product_wraper div.product_type div.type_b{
+    margin-top: 35px;
+}
+main.main div.product_wraper div.product_type  img{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+main.main div.shop{
+    /* border: 1px solid red; */
+    width: auto;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    background-image: url(../images/06.png);
+}
+main.main div.shop div.shop_text{
+    /* border: 1px solid black; */
+    display: inline-block;
+    padding-right:80px ;
+    color: #AB6E13;
+}
+main.main div.shop div.shop_pic{
+    /* border: 1px solid blue; */
+    display: inline-block;
+    padding-right: 30px;
+}
+ 

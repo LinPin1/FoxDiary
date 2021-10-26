@@ -36,3 +36,99 @@ nav.nav ul.menu_list li.b::before{
     content: url(../images/ICON1.png);
 }
 /* ------------------------------------------------ */
+
+div.parent_container main.main div.cover> img{
+    width: 950px;
+    height: 600px;
+    background-size: contain;
+    display: block;
+    margin: 0;
+}
+div.parent_container main.main div.ooo{
+    width: 300px;
+    height: 100px;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+}
+div.parent_container main.main div.product_wrapper{
+    width: 950Px;
+    height: auto;
+    /* border: 1px solid red; */
+    /* background-image: url(./images/06.png); */
+    background-color:rgba(245, 191, 51, .3);
+}
+main.main div.product_wrapper div.title >h2{
+    color: #F97F0F;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 0px 0px 10px white;
+}
+main.main div.product_wrapper div.title {
+    margin: 0 auto;
+}
+main.main div.product_wrapper div.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* border: 1px solid black; */
+    padding: 50px;
+    gap: 50px;
+}
+main.main div.product_wrapper div.grid div {
+border: 2px solid #ab6e13;
+font-size: 18px;
+text-align: center;
+width: 225px;
+background-color: white;
+}
+main.main div.product_wrapper div.grid div img{
+    width: 220px;
+    height: 230px;
+    background-size: contain;
+    background-position: center;
+}
+main.main div.product_wrapper div.grid div a{
+    text-decoration: none;
+}
+main.main div.product_wrapper div.grid div p{
+    margin: 0 10px 10px 10px;
+}
+
+main.main div.product_wrapper div.grid div:hover{
+    background-image: url(./images/13.jpeg);
+}
+main.main div.page {
+    /* border: 1px solid red; */
+    margin: 50px auto 0px;
+    padding-bottom: 50px;
+}
+main.main div.product_wrapper div.page > ul{
+    display: flex;
+    /* border: 1px solid orange; */
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+main.main div.product_wrapper div.page ul li{
+    /* border: 1px solid green; */
+    border-radius: 30px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #EF9C4F;
+    margin: 0 3px;
+}
+main.main div.product_wrapper div.page ul p{
+    /* border: 1px solid purple; */
+    font-size: 18px;
+    margin: 8px auto;
+    width: 30px;
+    text-align: center;
+    color: white;
+}
+main.main div.product_wrapper div.page ul a{
+    text-decoration: none;
+}
+main.main div.product_wrapper div.page ul li:hover{
+    background-color: #B7170D;
+}
