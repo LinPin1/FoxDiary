@@ -1,14 +1,14 @@
    /* footer */
    footer.footer{
     /* border: 1px solid red; */
-    width: 100%;
+    width: 1200px;
     /* width: 100%; */
     height: auto;
     margin: 0 auto;
     /* margin-top: 20px; */
     background-color: #AB6E13;
     /* position: sticky; */
-    position: absolute;
+    position: relative;
     z-index: 50;
 }
 footer.footer div.footer_box div.shop_information{
