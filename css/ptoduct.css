@@ -73,7 +73,7 @@ main.main div.product_wrapper div.grid{
     grid-template-columns: auto auto auto;
     /* border: 1px solid black; */
     padding: 50px;
-    gap: 50px;
+    gap: 50px;;
 }
 main.main div.product_wrapper div.grid div {
 border: 2px solid #ab6e13;
@@ -86,13 +86,14 @@ main.main div.product_wrapper div.grid div img{
     width: 220px;
     height: 230px;
     background-size: contain;
-    background-position: center;
+    background-position: cover;
 }
 main.main div.product_wrapper div.grid div a{
     text-decoration: none;
 }
 main.main div.product_wrapper div.grid div p{
     margin: 0 10px 10px 10px;
+    color: #ab6e13;
 }
 
 main.main div.product_wrapper div.grid div:hover{

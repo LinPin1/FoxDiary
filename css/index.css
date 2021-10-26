@@ -158,11 +158,12 @@ main.main div.product_wraper div.newproduct{
     height: 235px;
     /* margin-top: 45px; */
 }
-main.main div.product_wraper div.newproduct >div{
+main.main div.product_wraper div.newproduct div{
     border: 2px solid black;
     width: 194px;
     background-color: white;
     border-radius:10px;
+    overflow: hidden;
 }
 main.main div.product_wraper div.newproduct  p{
     font-size: 16px;
@@ -174,18 +175,20 @@ main.main div.product_wraper div.newproduct  a{
 main.main div.product_wraper div.newproduct div.a_pic >a ,img.a_pic{
     /* border: 1px solid green; */
     display: block;
-    width: 188px;
+    width: 190px;
     height: 157px;
 }
 main.main div.product_wraper div.newproduct div.b_pic >a ,img.b_pic{
     display: block;
-    width: 188px;
+    width: 190px;
     height: 157px;
+    overflow: hidden;
 }
 main.main div.product_wraper div.newproduct div.c_pic >a ,img.c_pic{
     display: block;
-    width: 188px;
+    width: 190px;
     height: 157px;
+    overflow: hidden;
 }
 /* main.main div.product_wraper div.newproduct div.c_pic >a,img.pic:hover{
     background-image: u;
@@ -193,8 +196,9 @@ main.main div.product_wraper div.newproduct div.c_pic >a ,img.c_pic{
 } */
 main.main div.product_wraper div.newproduct div.d_pic >a ,img.d_pic{
     display: block;
-    width: 188px;
+    width: 190px;
     height: 157px;
+    overflow: hidden;
 }
  /* main.main div.product_wraper div.product_text{
     border: 1px solid black;
