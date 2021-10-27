@@ -165,6 +165,9 @@ main.main div.product_wraper div.newproduct div{
     border-radius:10px;
     overflow: hidden;
 }
+main.main div.product_wraper div.newproduct div:hover{
+    transform: translate(-10px, -10px);
+}
 main.main div.product_wraper div.newproduct  p{
     font-size: 16px;
 }
@@ -218,6 +221,9 @@ main.main div.product_wraper div.product_type{
 main.main div.product_wraper div.product_type >div{
     width: 200px;
     height: 230px;
+}
+main.main div.product_wraper div.product_type >div:hover{
+    transform: translate(-10px, -10px);
 }
 main.main div.product_wraper div.product_type  p{
     margin: 0;
