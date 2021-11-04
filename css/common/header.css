@@ -1,8 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* background-color: #F6D47B; */
+    background-image:url(../../images/back/back01.jpg) ;
+    /* background-image: url(./images/06.png); */
+    background-repeat: repeat;
+    /* background-position: right; */
+}
+/* --------------------- */
+
 /*header */
 header.header{
-    /* border: 1px solid black;
+    /* /* border: 1px solid black; */
     /* width: 100%; */
-    width: 1200px;
+    width: 100%;
     height: 60px;
     margin: 0 auto;
     background-color: #AB6E13;
@@ -27,9 +40,32 @@ header.header a.shoppingcar > img{
     height: 35px;
     float: right;
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 170px;
 }
 /*  header */
+
+div.parent_container{
+    /* width: 1200px; */
+    /* margin: 0 auto; */
+    border: 1px solid red;
+    font-size: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    background-image: url(../../images/back/back01.jpg);
+    background-repeat:repeat ;
+}
+div.parent_container aside.aside, div.parent_container main.main{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+div.parent_container main.main{
+    border: 1px solid green;
+    width: calc(100% -250px);
+    margin-left: 250px; 
+    /* background-color: #FFF3E1; */
+}
 
  /* menu */
  div.parent_container aside.aside{
@@ -77,7 +113,7 @@ aside.aside nav.nav ul.menu_list > li{
 }
 aside.aside nav.nav ul.menu_list > li:hover{
     text-shadow: 2px 2px 5px #AB6E13;
-    transform: translate(-10px, -10px);
+    transform: translate(-5px, -5px);
 }
 aside.aside nav.nav ul.menu_list > li > a{
     text-decoration: none;

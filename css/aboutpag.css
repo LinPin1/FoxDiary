@@ -1,82 +1,22 @@
 @import"./common/header.css";
 @import"./common/footer.css"; 
 
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    /* background-color: #F6D47B; */
-    background-image:url(../images/back/back01.jpg) ;
-    background-repeat: repeat;
-    background-position: right; ;
-}
-div.parent_container{
-    width: 1200px;
-    margin: 0 auto;
-    /* border: 1px solid red; */
-    font-size: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-div.parent_container aside.aside, div.parent_container main.main{
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-div.parent_container main.main{
-    /* border: 1px solid green; */
-    /* width: 100%; */
-    margin-left: 250px;
-    background-image: url(../images/back/back111.png);
-    background-repeat: repeat;
-}
+
 /* ------------------------------------------------ */
-
-/* -----breadcrumb---- */
-nav.breadcrumb{
+nav.nav ul.menu_list > li.aa::before{
+    content: url(../images/ICON1.png);
+}
+main.main div.cover{
+    width: 100%;
     /* border: 1px solid black; */
-    padding: 5px 10px;
-    margin: 10px;
 }
-nav.breadcrumb ol.breadcrumb_list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
-}
-nav.breadcrumb ol.breadcrumb_list > li{
-    /* border: 1px solid red; */
-    display: inline-block;
-    color: #ab6e13;
-    font-size: 16px;
-}
-nav.breadcrumb ol.breadcrumb_list > li::before{
-    content: "/";
-    font-size: 18px;
-    color: black;
-    margin: 0 10px;
-}
-nav.breadcrumb ol.breadcrumb_list > li:first-child::before{
-    display: none;
-}
-nav.breadcrumb ol.breadcrumb_list > li > a{
-    /*   border: 1px solid blue; */
-    text-decoration: none;
-    display: inline-block;
-    color:  #ab6e13;;
-}
-/* nav.breadcrumb ol.breadcrumb_list > li > a:hover{
-    color: #0056b3;
-} */
-/*    ------------------------    */
-
-main.main div.cover div.cover_pic{
-    width: 950px;
+main.main div.cover div.cover_pic img{
+    width: 100%;
     height: 435px;
-    background-image: url(../images/photo/aboutpag_a.png);
-    background-size: cover
+    /* background-image: url(../images/photo/aboutpag_a.png); */
+    /* background-size: contain;
+    background-repeat: no-repeat;*/
+    display: block; 
 }
 main.main div.cover div.cover_text{
     margin: 0 auto;
@@ -93,7 +33,6 @@ main.main div.cover div.cover_text{
 main.main div.cover div.cover_text div.frame p{
     /* border: 1px solid red; */
     text-indent: 2em;
-    text-shadow: 0px 0px 10px gray;
     margin: 0 auto;
     padding: 0 77px;
     line-height: 2;
@@ -104,7 +43,7 @@ main.main div.divider111{
     background-image: url(../images/divider_b.png);
     background-repeat:repeat-x ;
     background-position: center;
-    margin: 15px 41px; 
+    margin: 15px 145px; 
 
 }
 main.main div.teach{
@@ -130,7 +69,8 @@ main.main div.teach div.teach_tt{
     background-repeat: no-repeat;
     background-size: contain;
     height: 60px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin: 0 100px 30px 100px;
 }
 main.main div.teach div.teach_tt >p{
     /* border: 1px solid blue; */
@@ -143,6 +83,7 @@ main.main div.teach_a{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
+    margin: auto 150px auto 70px ;
 }
 main.main div.teach_a div:hover{
 transform: translate(-20px, -20px); 
@@ -157,7 +98,8 @@ main.main div.teach_a div a{
 }
 main.main div.teach_a div img{
     width: 260px;
-    border-radius: 20px;
+    border-radius: 13px;
+    overflow: hidden;
 }
 main.main div.teach_a div p.t{
     color: #ab6e13;
@@ -193,7 +135,7 @@ transform: translate(-20px, -20px);
 }
 main.main div.teach_b div img{
     width: 260px;
-    border-radius: 20px;
+    border-radius: 13px;
 }
 main.main div.teach_b div p.t{
     color: #ab6e13;

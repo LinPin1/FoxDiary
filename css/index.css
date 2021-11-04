@@ -1,44 +1,13 @@
 @import"./common/header.css";
 @import"./common/footer.css"; 
 
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    /* background-color: #F6D47B; */
-    background-image:url(../images/back/back01.jpg) ;
-    /* background-image: url(./images/06.png); */
-    background-repeat: repeat;
-    /* background-position: right; */
-}
-/* --------------------- */
 
-div.parent_container{
-    width: 1200px;
-    margin: 0 auto;
-    /* border: 1px solid red; */
-    font-size: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-div.parent_container aside.aside, div.parent_container main.main{
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-div.parent_container main.main{
-    /* border: 1px solid green; */
-    /* width: 100%; */
-    margin-left: 250px;
-    background-color: #FFF3E1;
-    background-image: url(../images/back/back01.jpg);
-    background-repeat:repeat ;
-}
+
+
 div.parent_container main.main  img.cover{
-    width: 950px;
-    height: 600px;
+    /* width: 1070px; */
+    width: 100%;
+    /* height: 471px; */
     background-size: cover;
     /* border-radius: 75px; */
     display: block;
@@ -46,10 +15,11 @@ div.parent_container main.main  img.cover{
 }
  div.parent_container main.main div.divider{
     height: 33px;
+    width: 850px;
     /* border: 1px solid black; */
-    background-image: url(../images/divider2.png);
-    background-repeat:no-repeat ;
-    margin: 66px 50px 50px 50px;
+    /* background-image: url(../images/divider2.png);
+    background-repeat:no-repeat ; */
+    margin: 125px 100px 50px 100px;
 }
 main.main div.about_wraper{
     /* border: 1px solid black; */
@@ -57,6 +27,7 @@ main.main div.about_wraper{
     display: block;
     background-image: url(../images/06.png);
     padding-bottom: 50px;
+    margin-left: 80px;
 }
 main.main div.about_wraper div.about_pic, div.about_text{
    /* border: 1px solid blue; */
@@ -98,7 +69,7 @@ main.main div.about_wraper div.about_text div.text_box >p{
     text-align: center;
     line-height: 2;
     margin: 59px 100px 59px 200px;
-    text-shadow: 0px 0px 10px gray;
+    /* text-shadow: 0px 0px 10px gray; */
 }
 main.main div.about_wraper div.about_text div.text_box p a{
     text-decoration: none;
@@ -108,7 +79,7 @@ main.main div.announcement{
     /* border: 1px solid black; */
     font-size: 0px;
     color: #AB6E13;
-    margin: auto ;
+    /* margin: 0 90px ; */
 }
 main.main div.announcement > table {
     /* border: 1px solid black; */
@@ -123,8 +94,8 @@ main.main div.announcement > table >tr,td{
     /* border: 1px solid black; */
     box-sizing: border-box;
     height: 60px;
-    padding-left: 110px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 main.main div.announcement  table td.right{
     border-right:5px solid white;
@@ -132,22 +103,25 @@ main.main div.announcement  table td.right{
 /*  產品區  */
 main.main div.product_wraper{
     /* border: 1px solid red; */
-    width: 954px;
-    height: 900px;
+    width: 100% ;
+    height: auto;
     text-align: center;
     display: inline-block;
-    margin-top: 45px;
-    background-color: white;
+    margin-top: 90px;
+    /* background-color: white; */
     background-image: url(../images/photo/product_back.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
-/* main.main div.product_wraper div.newproduct_text{
-    border: 1px solid black;
-} */
+main.main div.product_wraper div.newproduct_text{
+    /* border: 1px solid black; */
+    margin-right: 200px;
+    margin-left: 100px;
+}
 main.main div.product_wraper div.newproduct_text > h2{
     margin: 45px 0;
+    margin-bottom: 90px;
     color: #AB6E13;
     font-size: 30px;
 }
@@ -157,6 +131,8 @@ main.main div.product_wraper div.newproduct{
     justify-content: space-evenly;
     height: 235px;
     /* margin-top: 45px; */
+    margin-right: 180px;
+    margin-left: 80px;
 }
 main.main div.product_wraper div.newproduct div{
     border: 2px solid black;
@@ -203,11 +179,13 @@ main.main div.product_wraper div.newproduct div.d_pic >a ,img.d_pic{
     height: 157px;
     overflow: hidden;
 }
- /* main.main div.product_wraper div.product_text{
-    border: 1px solid black;
-} */
+ main.main div.product_wraper div.product_text{
+    /* border: 1px solid black; */
+    margin-right: 200px;
+    margin-left: 100px;
+}
 main.main div.product_wraper div.product_text > h2{
-    margin: 90px 0 45px 0;
+    margin: 90px 0 45px 0px;
     color: #AB6E13;
     font-size: 30px;
 }
@@ -217,6 +195,8 @@ main.main div.product_wraper div.product_type{
     justify-content: space-evenly;
     height: 235px;
     /* margin-top: 45px; */
+    margin-right: 200px;
+    margin-left: 100px;
 }
 main.main div.product_wraper div.product_type >div{
     width: 200px;
@@ -250,6 +230,7 @@ main.main div.shop{
     justify-content: flex-end;
     background-color: white;
     background-image: url(../images/06.png);
+    padding-right: 150px;
 }
 main.main div.shop div.shop_text{
     /* border: 1px solid black; */
