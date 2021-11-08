@@ -1,39 +1,9 @@
 @import url(./common/footer.css);
 @import url(./common/header.css);
 
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    /* background-color: #F6D47B; */
-    background-image:url(../images/back/back01.jpg) ;
-    background-repeat: repeat;
-    /* background-position: right; */
-}
 
-    div.parent_container{
-        width: 1200px;
-        margin: 0 auto;
-        /* border: 1px solid red; */
-        font-size: 0;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
-    div.parent_container aside.aside, div.parent_container main.main{
-        display: inline-block;
-        vertical-align: top;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
-    div.parent_container main.main{
-        /* border: 1px solid green; */
-        /* width: 100%; */
-        margin-left: 250px;
-        background-image: url(../images/back/back111.png);
-        background-repeat:repeat ;
-    }
     /* ---------------- */
+   
 
     nav.breadcrumb{
         /* border: 1px solid black; */
@@ -66,11 +36,11 @@ body{
         text-decoration: none;
         display: inline-block;
         color:  #ab6e13;
-       
     }
+    
     div.parent_container main.main div.product_wrapper div.a{
         /* border: 1px solid blue; */
-        width: 950px;
+        width: 100%;
         display: inline-block;
         background-color: rgba(255, 255, 255, .5);
         margin-bottom: 50px;
@@ -127,18 +97,43 @@ body{
         font-size: 18px;
         /* color: #FDA04A; */
     }
-    main.main div.product_wrapper div.a div.atext p.price{
+    main.main div.product_wrapper div.a div.atext >p{
         font-size: 24px;
         text-align: center;
+        color: red;
+    }
+    main.main div.product_wrapper div.a div.atext p.price{
+       text-decoration: line-through;
+       font-size: 18px;
+       color: black;
     }
     main.main div.product_wrapper div.a div.atext form div.input{
-        font-size: 18px;
         text-align: center;
+        font-size: 0;
+    }
+    main.main div.product_wrapper div.a div.atext form div.input input.reduce{
+        /* border: 1px solid palegreen; */
+        width: 30px;
+        height: 30px;
+        border: 1px solid #f6d47b;
+    }
+    main.main div.product_wrapper div.a div.atext form div.input input.add{
+        width: 30px;
+        height: 30px;
+        border: 1px solid #f6d47b;
     }
     main.main div.product_wrapper div.a div.atext form input{
-        width: 140px;
-        height: 20px;
-         background-color: #FBEECF;
+        display: inline-block;
+        background-color: #FBEECF;
+        border: 1px solid #f6d47b;
+        font-size: 15px;
+    }
+    main.main div.product_wrapper div.a div.atext form div.input input.buy{
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        border-left: none;
+        border-right:none ; 
     }
     main.main div.product_wrapper div.a div.atext form button{
         margin: 20px 0px 20px 25px;
@@ -162,8 +157,10 @@ body{
     }
     main.main div.product_wrapper div.b{
         /* border: 1px solid blue; */
-        width: 950px;
+        width: 100%;
         background-color: rgba(255, 255, 255, .5);
+        margin-top: 50px;
+        padding-top: 50px;
     }
     main.main div.product_wrapper div.b p{
         font-size: 18px;
@@ -171,22 +168,28 @@ body{
     }
     main.main div.product_wrapper div.b div.ba >h2{
         /* border: 1px solid blueviolet; */
-        margin: 50px auto;
+        margin: 0;
         font-size: 24px;
         text-align: center;
         color: #ab6e13;
     }
     main.main div.product_wrapper div.b div.bb{
         /* border: 1px solid blueviolet; */
-        margin: 10px auto;
+        margin: 50px auto 70px auto;
         font-size: 18px;
         text-align: center;
         color: #FDA04A;
     }
+    main.main div.product_wrapper div.b div.bc{
+        margin:  
+    }
     main.main div.product_wrapper div.b div.bc >img{
-        width: 950px;
-        height: 300px;
+        width: 100%;
+        height: auto;
         background-size: cover;
+    }
+    main.main div.product_wrapper div.b div.bd{
+        padding-left: 60px;
     }
     main.main div.product_wrapper div.b div.bd >img{
         width: 350px;
@@ -205,6 +208,7 @@ body{
     }
     main.main div.product_wrapper div.b div.be{
         margin-bottom:100px ;
+        padding-left: 60px;
     }
     main.main div.product_wrapper div.b div.be >img{
         width: 350px;

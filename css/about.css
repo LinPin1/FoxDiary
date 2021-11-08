@@ -50,14 +50,17 @@
     /* main.main div{
         margin-left: 60px;
     } */
-
+    div.parent_container main.main{
+        max-width: 1190px;
+        width: calc(100% - 250px);
+    }
     div.parent_container main.main img.cover_b{
+        max-width: 1190px;
         width: 100%;
-        height: 550px;
-        background-size: cover;
+        height: auto;
+        background-size: contain;
         display: block;
         margin: 0 auto;
-
     }
      div.parent_container main.main div.divider_b{
         /* border:  1px solid black; */
@@ -71,11 +74,12 @@
     } 
     main.main div.about_a{
         /* border: 1px solid green; */
-        width: 950px;
+        max-width: 1190px;
+        width: 100%;
         height:auto;
         display: block;
         margin-top: 140px;
-        margin-left: 100px;
+        padding-left: 100px;
     }
     main.main div.about_a div.about_apic{
         display: inline-block;
@@ -121,10 +125,11 @@
     }
     main.main div.about_b{
         /* border: 1px solid green; */
-        width: 950px;
+        max-width: 1190px;
+        width: 100%;
         height:auto;
         display: block;
-        margin-left: 60px;
+        padding-left: 60px;
     }
     main.main div.about_b div.about_btext div.bh {
         /* background-color: #F6D47B; */
@@ -174,12 +179,13 @@
     }
     main.main div.c{
         /* border: 1px solid black; */
-        width: 950px;
+        max-width: 1191px;
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
         margin-top: 30px;
         /* background-color: white; */
-        margin-left: 60px;
+        padding-left: 60px;
     }
     main.main div.c div{
         /* border: 1px solid red; */

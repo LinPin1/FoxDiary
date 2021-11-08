@@ -3,19 +3,25 @@
 
 
 
-
+.wrap{
+	display: none;
+}
+div.parent_container main.main{
+    max-width: 1190px;
+    width: calc(100% - 250px);
+}
 div.parent_container main.main  img.cover{
-    /* width: 1070px; */
+    max-width: 1190px;
     width: 100%;
     /* height: 471px; */
-    background-size: cover;
+    background-size: contain;
     /* border-radius: 75px; */
     display: block;
     margin: 0;
 }
  div.parent_container main.main div.divider{
     height: 33px;
-    width: 850px;
+    width: 80%;
     /* border: 1px solid black; */
     /* background-image: url(../images/divider2.png);
     background-repeat:no-repeat ; */
@@ -23,10 +29,11 @@ div.parent_container main.main  img.cover{
 }
 main.main div.about_wraper{
     /* border: 1px solid black; */
+    width: calc(100% - 250px -80px);
     font-size: 0;
     display: block;
     background-image: url(../images/06.png);
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     margin-left: 80px;
 }
 main.main div.about_wraper div.about_pic, div.about_text{
@@ -35,48 +42,49 @@ main.main div.about_wraper div.about_pic, div.about_text{
     display: inline-block;
 }
 main.main div.about_wraper div.about_pic{
-    width: 450px;
+    width: 38%;
     height: 350px;
     margin-left: 70px;
     margin-top: 73px;
-    /* z-index: 2; */
-    position: absolute;
+    position: relative;
     z-index: 20;
 }
 main.main div.about_wraper div.about_pic > img.about_pic{
     display: inline-block;
     background-size: cover ;
-    width: 450px;
-    height: 350px;
+    width: 100%;
+    height: auto;
+    z-index: 2;
 }
 main.main div.about_wraper div.about_text{
-    width: 525px;
+    width: 48.5%;
     height: 397px;
     display: inline-block;
-    margin-left: 350px;
-    margin-top: 150px;
+    transform: translate(-100px, 30px);
+    border: 1px solid red;
     /* position: absolute; */
-    z-index: 10;
+    /* z-index: 10; */
 }
-main.main div.about_wraper div.about_text div.text_box{
+main.main div.about_wraper div.about_text {
     border:1px solid white;
     background-color:  white;
     border-radius: 20px;
 
 }
-main.main div.about_wraper div.about_text div.text_box >p{
+main.main div.about_wraper div.about_text  >p{
     font-size: 20px;
     text-align: center;
     line-height: 2;
-    margin: 59px 100px 59px 200px;
+    margin: 59px 80px 40px 120px;
     /* text-shadow: 0px 0px 10px gray; */
 }
-main.main div.about_wraper div.about_text div.text_box p a{
+main.main div.about_wraper div.about_text  p a{
     text-decoration: none;
     color: #ab6e13;
 }
 main.main div.announcement{ 
     /* border: 1px solid black; */
+    /* width: calc(100% - 250px); */
     font-size: 0px;
     color: #AB6E13;
     /* margin: 0 90px ; */
@@ -136,7 +144,8 @@ main.main div.product_wraper div.newproduct{
 }
 main.main div.product_wraper div.newproduct div{
     border: 2px solid black;
-    width: 194px;
+    max-width: 194px;
+    width: 100%;
     background-color: white;
     border-radius:10px;
     overflow: hidden;
@@ -223,7 +232,7 @@ main.main div.product_wraper div.product_type  img{
 }
 main.main div.shop{
     /* border: 1px solid red; */
-    width: auto;
+    width: calc(100%-250px);
     height: 300px;
     margin-top: 100px;
     display: flex;
@@ -240,7 +249,52 @@ main.main div.shop div.shop_text{
 }
 main.main div.shop div.shop_pic{
     /* border: 1px solid blue; */
+    /* width: 48%; */
     display: inline-block;
     padding-right: 30px;
 }
- 
+main.main div.shop div.shop_pic >img{
+    width: 100%;
+}
+ /* 開頭 */
+ .ml12 {
+ font-weight: 200;
+ font-size: 24px;
+ text-transform: uppercase;
+ letter-spacing: 0.5em;
+ color: #ab6e13;
+ padding-top: 45vh;
+ font-family: Varela Round;
+}
+@media screen and (max-width: 575px){
+   .ml12 {
+       font-size: 1.2em;
+   }
+}
+.loading >h1{
+    /* border: 1px solid rebeccapurple; */
+    margin-top: 0;
+}
+.ml12 .letter {
+ display: inline-block;
+ line-height: 1em;
+}
+
+.loading{
+ height: 100vh;
+ width: 100vw;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ /* background-image: url(../images/back/back01.jpg); */
+ background: white;
+ opacity: 1;
+ transition: 1s;
+}
+
+.fade_out{
+   opacity: 0;
+}
+/* img{
+    max-width: 100%;
+  } */

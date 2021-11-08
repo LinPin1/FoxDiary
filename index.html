@@ -4,14 +4,18 @@
     <meta charset="utf-8">
     <title>狐塗帳</title>
     <link rel="stylesheet" href="./css/index.css">
-
-
-    <style>
-        
-       
-    </style>
+    <link rel="stylesheet" href="./css/tool/aos.css">
+    <!-- 開頭 -->
+  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+
+    <div class="loading">
+		<h1 class="ml12">寫個屬於你的故事</h1>
+	</div>
+    <div class="wrap">
+
       <header class="header">
         <a href="#" class="shoppingcar"><img src="./images/cart.png" alt=""></a>
         <a href="./member.html" class="man"><img src="./images/man.png" alt=""></a>
@@ -34,7 +38,9 @@
         </aside>
         
         <main class="main">
-            <img src="./images/photo/pic_1.png" class="cover" alt="圖片加載中">
+            <div class="cover">
+                <img src="./images/photo/pic_1.png" class="cover" alt="圖片加載中">
+            </div>
             <div class="divider">
                 <hr style="border:2px dashed #ab6e13" size="1" width="90%">
                 <!-- <img src="./images/divider.png" class="divider" alt=""> -->
@@ -44,7 +50,7 @@
                     <img src="./images/photo/about_pic.jpg" class="about_pic" alt="">
                 </div>
                 <div class="about_text">
-                    <div class="text_box"><P>你知道手帳是什麼嗎？<br>你有紀錄生活的習慣嗎？<br>你有多久沒有好好的用紙筆記錄心情了呢？<br><br><a href="./about.html">瞭解更多 ></a></P></div>
+                    <P>你知道手帳是什麼嗎？<br>你有紀錄生活的習慣嗎？<br>你有多久沒有好好的用紙筆記錄心情了呢？<br><br><a href="./about.html">瞭解更多 ></a></P>
                 </div>
             </div>
             <div class="announcement">
@@ -140,6 +146,12 @@
             <div class="borrow"><p>參考網站：</p><a href="https://www.hellostudio-shop.co/pages/about"><p>Hello Studio 你好工作室 </p></a>
             </div>
         </div>
-    </footer>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./js/index.js"></script>
+
   </body>
 </html>

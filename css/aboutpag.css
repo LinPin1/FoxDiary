@@ -6,23 +6,25 @@
 nav.nav ul.menu_list > li.aa::before{
     content: url(../images/ICON1.png);
 }
+div.parent_container main.main{
+    max-width: 1190px;
+    width: calc(100% - 250px);
+}
 main.main div.cover{
     width: 100%;
+    height: auto;
     /* border: 1px solid black; */
 }
 main.main div.cover div.cover_pic img{
     width: 100%;
-    height: 435px;
-    /* background-image: url(../images/photo/aboutpag_a.png); */
-    /* background-size: contain;
-    background-repeat: no-repeat;*/
+    height: auto;
     display: block; 
 }
 main.main div.cover div.cover_text{
     margin: 0 auto;
     /* border: 1px solid blue; */
-    width: 698px;
-    height: 300px;
+    width: 60%;
+    height: auto;
     padding-top: 25px;
     /* background-color: white; */
     margin-top: 40px;
@@ -47,8 +49,10 @@ main.main div.divider111{
 
 }
 main.main div.teach{
+    border: 1px solid blueviolet;
     background-image: url(./images/06.png);
     background-repeat: repeat;
+    /* padding-left: 10%; */
 }
 main.main div.teach div.teach_t{
     /* border: 1px solid white; */
@@ -83,7 +87,7 @@ main.main div.teach_a{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
-    margin: auto 150px auto 70px ;
+    padding: auto 150px auto 70px ;
 }
 main.main div.teach_a div:hover{
 transform: translate(-20px, -20px); 
@@ -153,7 +157,8 @@ main.main div.teach_b div p.n{
     background-color : #F6D47B;
 }
 main.main div.book{
-    width: 750px;
+    max-width: 1190px;
+    width: calc(100% - 250px);
     /* border: 3px solid #ab6e13; */
     display: flex;
     justify-content: space-evenly;

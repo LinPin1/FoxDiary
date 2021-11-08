@@ -1,38 +1,8 @@
 @import url(./common/footer.css);
 @import url(./common/header.css);
 
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    /* background-color: #F6D47B; */
-    background-image:url(../images/back/back01.jpg) ;
-    background-repeat: repeat;
-    /* background-position: right; */
-}
 
-    div.parent_container{
-        width: 1200px;
-        margin: 0 auto;
-        /* border: 1px solid red; */
-        font-size: 0;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
-    div.parent_container aside.aside, div.parent_container main.main{
-        display: inline-block;
-        vertical-align: top;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
-    div.parent_container main.main{
-        /* border: 1px solid green; */
-        /* width: 100%; */
-        margin-left: 250px;
-        /* background-image: url(../images/back/back111.png); */
-        background-repeat:repeat ;
-    }
+   
     /* -------------------- */
 
       /* breadcrumb */
@@ -69,31 +39,41 @@ body{
         color:  #ab6e13;
     }
     /* breadcrumb */
+    div.parent_container main.main{
+        max-width: 1190px;
+        width: calc(100% - 250px);
+    }
      div.parent_container main.main div.cover{
          /* border: 1px solid red; */
-        width: 950px;
+        width:100%;
+        max-width: 1190px;
         height: auto;
     }
     div.parent_container main.main div.cover >img{
-        width: 950px;
+        width: 100%;
     }
     main.main div.content{
-        width: 700px;
+        width: 60%;
         /* border: 1px solid red; */
         border-radius: 150px 150px 150px 150px;
         background-color: white;
         display: flex;
-        margin: 100px 100px;
+        /* margin: 100px 10% 100px 10%; */
+        margin: 100px auto;
         justify-content: center;
         align-items: center;
     }
+    main.main div.content div.content_pic{
+        width: 55%;
+    }
     main.main div.content div.content_pic > img{
-        width: 350px;
+        width: 100%;
         background-size: cover;
         border-radius: 150px 0px 0px 150px;
+        /* border: 1px solid black; */
     }
     main.main div.content div.content_form{
-        width: 350px;
+        width: 45%;
     }
     main.main div.content div.content_form div.t >h2{
         font-size: 24px;

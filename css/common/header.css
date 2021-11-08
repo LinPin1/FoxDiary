@@ -9,6 +9,7 @@ body{
     background-repeat: repeat;
     /* background-position: right; */
 }
+
 /* --------------------- */
 
 /*header */
@@ -16,6 +17,7 @@ header.header{
     /* /* border: 1px solid black; */
     /* width: 100%; */
     width: 100%;
+    max-width: 1440px;
     height: 60px;
     margin: 0 auto;
     background-color: #AB6E13;
@@ -24,7 +26,36 @@ header.header{
     top: 0px;
     /* background-image: url(../../images/back/images.jpeg);
     background-repeat: repeat; */
-} 
+}
+/* @media all and (max-width: 575.98px){
+    header.header{
+     width: 100%;
+    }
+  } 
+  @media all and (min-width: 576px) and (max-width: 767.98px){
+    header.header{
+      width: 540px;
+    }
+  } 
+  @media all and (min-width: 768px) and (max-width: 991.98px){
+    header.header{
+      width: 720px;
+    }
+  }
+  @media all and (min-width: 992px) and (max-width: 1199.98px){
+    header.header{
+      width: 960px;
+    }
+  }
+  @media all and(min-width: 1200px) and (max-width: 1399.98px){
+    header.header{
+      width: 100vw;
+    }
+  }
+  @media all and (min-width: 1400px){
+    header.header{
+     width: 100vw;
+    } */
 
 header.header a.man > img{
     display: inline-block;
@@ -40,12 +71,13 @@ header.header a.shoppingcar > img{
     height: 35px;
     float: right;
     margin-top: 20px;
-    margin-right: 170px;
+    margin-right: 8.5%;
 }
 /*  header */
 
 div.parent_container{
-    /* width: 1200px; */
+    width: 100%;
+    max-width: 1440px;
     /* margin: 0 auto; */
     border: 1px solid red;
     font-size: 0;
@@ -53,18 +85,16 @@ div.parent_container{
     /* overflow: hidden; */
     background-image: url(../../images/back/back01.jpg);
     background-repeat:repeat ;
-}
+    /* overflow: hidden;*/
+} 
+/* div.parent_container img{
+    width: 100%;
+} */
 div.parent_container aside.aside, div.parent_container main.main{
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
     box-sizing: border-box;
-}
-div.parent_container main.main{
-    border: 1px solid green;
-    width: calc(100% -250px);
-    margin-left: 250px; 
-    /* background-color: #FFF3E1; */
 }
 
  /* menu */
@@ -73,19 +103,19 @@ div.parent_container main.main{
     width: 250px;
     height: 100vh;
     position: fixed;
+    left: 0;
     z-index: 40;
-    float: left;
+    /* float: left; */
     background-color:rgba(246, 212, 123, .7);
-    /* background-image: url(../../images/back/back01.jpg);
-    background-repeat:repeat ; */
-    }
-/* 
-div.parent_container aside.aside a.logo > img:hover{
-    transform: rotate(-20deg);  
-    transform-origin: 50% 50%; 
-} */
-
-
+}
+div.parent_container main.main{
+    border: 1px solid green;
+    width: calc(100% -250px);
+    max-width: 1190px;
+    margin-left: 250px; 
+    
+    /* background-color: #FFF3E1; */
+}
 div.parent_container aside.aside a.logo > img{
     width: 239px;
     height: 142px;
@@ -121,3 +151,37 @@ aside.aside nav.nav ul.menu_list > li > a{
     color: #AB6E13;
 }
     /*   menu   */
+
+    /* img{
+        max-width: 100%;
+      }
+      @media all and (max-width: 575.98px){
+        div.parent_container main.main{
+         width: 100%;
+        }
+      } 
+      @media all and (min-width: 576px) and (max-width: 767.98px){
+        div.parent_container main.main{
+          width: 540px;
+        }
+      } 
+      @media all and (min-width: 768px) and (max-width: 991.98px){
+        div.parent_container main.main{
+          width: 720px;
+        }
+      }
+      @media all and (min-width: 992px) and (max-width: 1199.98px){
+        div.parent_container main.main{
+          width: 960px;
+        }
+      }
+      @media all and(min-width: 1200px) and (max-width: 1399.98px){
+        div.parent_container main.main{
+          width: 1140px;
+        }
+      }
+      @media all and (min-width: 1400px){
+        div.parent_container main.main{
+         width: 1320px;
+        }
+      } */
