@@ -151,6 +151,17 @@ aside.aside nav.nav ul.menu_list > li > a{
     color: #AB6E13;
 }
     /*   menu   */
+    
+    @media all and (max-width: 575.98px){
+      div.parent_container aside.aside{
+       transition: ;
+      }
+    } 
+    @media all and (min-width: 576px) and (max-width: 767.98px){
+      div.parent_container main.main{
+        width: 540px;
+      }
+    } 
 
     /* img{
         max-width: 100%;

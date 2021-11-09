@@ -59,6 +59,14 @@ footer.footer div.footer_box div.borrow p{
     margin: 0;
     display: inline-block;
     color: black;
-
-
 }
+@media all and (max-width: 575.98px){
+    footer.footer{
+     width: 100%;
+    }
+  } 
+  @media all and (min-width: 576px) and (max-width: 767.98px){
+    footer.footer{
+      width: 540px;
+    }
+  } 
