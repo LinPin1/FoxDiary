@@ -33,4 +33,17 @@ anime.timeline({loop: true})
     wrap.style.display = "block";
   },3000);
 
+  // menu
+$(function(){
+
+  // 點擊
+  $("button.btn").on("click", function(){
+    
+    // -open 的樣式切換
+    $(this).closest("aside.aside").toggleClass("-open");
+    
+  });
+
+});
+
  
