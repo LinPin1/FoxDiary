@@ -17,7 +17,7 @@ header.header{
     /* /* border: 1px solid black; */
     /* width: 100%; */
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     height: 60px;
     margin: 0 auto;
     background-color: #AB6E13;
@@ -78,8 +78,8 @@ header.header a.shoppingcar > img{
 div.parent_container{
     width: 100%;
     max-width: 1440px;
-    /* margin: 0 auto; */
-    border: 1px solid red;
+    margin: 0 auto;
+    /* border: 1px solid red; */
     font-size: 0;
     box-sizing: border-box;
     /* overflow: hidden; */
@@ -109,7 +109,7 @@ div.parent_container aside.aside, div.parent_container main.main{
     background-color:rgba(246, 212, 123, .7);
 }
 div.parent_container main.main{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: calc(100% -250px);
     max-width: 1190px;
     margin-left: 250px; 
@@ -128,9 +128,9 @@ div.parent_container aside.aside a.logo > img{
 div.parent_container aside.aside a.logo > img:hover{
     transform: translate(-10px, -10px);
 }
-div.parent_container aside.aside nav.nav{
-    /* border: 1px solid red; */
-}
+/* div.parent_container aside.aside nav.nav{
+    border: 1px solid red;
+} */
 aside.aside nav.nav ul.menu_list > li{
     list-style: none;
     /* border: 1px solid blue; */

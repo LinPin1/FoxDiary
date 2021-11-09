@@ -33,23 +33,4 @@ anime.timeline({loop: true})
     wrap.style.display = "block";
   },3000);
 
-
-// 入口區塊動畫
-// var tl1 = new TimelineMax();
-//   tl1.fromTo('.img_up', 1, { x: -90, y:90, opacity: 0 }, { x: 0, y:30, opacity: 1 
-//   }).fromTo('.img_dw', 1, { x: 90, y:-90, opacity: 0 }, { x: 30, y:0, opacity: 1 
-//   }).fromTo('.p1', 1, { opacity: 0 }, { opacity: 1 , delay: -1
-//   }).fromTo('.p2', 1, { opacity: 0  , delay: -.5}, { opacity: 1 });
-
-
-//    tl1.stop();
-
-//     setTimeout(function(){
-//         tl1.play();
-//     },7000);
-
-
-//     setTimeout(function(){
-//         AOS.init();
-//     },8000);
  

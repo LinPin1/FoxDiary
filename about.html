@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>關於手帳</title>
     <link rel="stylesheet" href="./css/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <style>
-
-       
     </style>
-
-
 </head>
 <body>
     <header class="header">
@@ -36,7 +34,8 @@
         <main class="main">
            
             <div class="B">
-                <img src="./images/新增資料夾 (4)/11_a.png" class="cover_b" alt="">
+                <img src="./images/新增資料夾 (4)/11_a.png" class="cover_b" alt="" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
             </div>
             <!-- <nav class="breadcrumb">
                 <ol class="breadcrumb_list"> 
@@ -46,10 +45,11 @@
                 </ol>
             </nav> -->
             <div class="about_a">
-                <div class="about_apic">
+                <div class="about_apic" >
                     <img src="./images/photo/about_aa.jpg" alt="">
                 </div>
-                <div class="about_atext">
+                <div class="about_atext" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
                     <div class="h"><h2>手帳起源</h2>
                     </div>
                     <div><p>手帳，來源於日本，本意是指隨身攜帶、隨時記事的一個本子。在日本，無論男女老少，幾乎每人都會隨身攜帶一個被稱爲『手帳』的記事本，隨時翻看 、或在本子上記錄些什麼。</p>
@@ -87,7 +87,6 @@
                 <div class="cg"><img src="./images/text/text6.png" alt=""></div>
                 <div class="ch"><a href="./aboutpag.html"><p> 更多帳教學 >></p></a></div>
             </div>
-
         </main>
 </div>
 <footer class="footer">
@@ -105,6 +104,13 @@
     </div>
 </footer>
       
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){
+    AOS.init();
+    });
+ </script>
     
 </body>
 </html>

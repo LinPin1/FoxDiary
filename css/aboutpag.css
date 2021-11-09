@@ -49,7 +49,7 @@ main.main div.divider111{
 
 }
 main.main div.teach{
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
     background-image: url(./images/06.png);
     background-repeat: repeat;
     /* padding-left: 10%; */

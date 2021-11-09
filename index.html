@@ -2,15 +2,16 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
     <title>狐塗帳</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/tool/aos.css">
-    <!-- 開頭 -->
-  
+    <link rel="stylesheet" href="./css/tool/animate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/tool/aos.css">
   </head>
   <body>
-
+    
     <div class="loading">
 		<h1 class="ml12">寫個屬於你的故事</h1>
 	</div>
@@ -38,7 +39,7 @@
         </aside>
         
         <main class="main">
-            <div class="cover">
+            <div class="cover animate__animated animate__fadeIn">
                 <img src="./images/photo/pic_1.png" class="cover" alt="圖片加載中">
             </div>
             <div class="divider">
@@ -46,14 +47,15 @@
                 <!-- <img src="./images/divider.png" class="divider" alt=""> -->
             </div> 
             <div class="about_wraper">
-                <div class="about_pic">
-                    <img src="./images/photo/about_pic.jpg" class="about_pic" alt="">
+                <div class="about_pic" data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                    <img src="./images/photo/about_pic.jpg" class="about_pic">
                 </div>
-                <div class="about_text">
+                <div class="about_text" >
                     <P>你知道手帳是什麼嗎？<br>你有紀錄生活的習慣嗎？<br>你有多久沒有好好的用紙筆記錄心情了呢？<br><br><a href="./about.html">瞭解更多 ></a></P>
                 </div>
             </div>
-            <div class="announcement">
+            <div class="announcement" >
                 <table>
                     <tr>
                         <td class="right">全館消費滿600免運費！</td>
@@ -61,7 +63,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="product_wraper">
+            <div class="product_wraper" >
                 <div class="newproduct_text"><h2>新品上架</h2></div>
                 <div class="newproduct">
                     <div class="a_pic">
@@ -151,6 +153,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+        AOS.init();
+        });
+    </script>
+    <!-- <script src="./js/aos.js"></script> -->
     <script src="./js/index.js"></script>
 
   </body>

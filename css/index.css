@@ -239,7 +239,9 @@ main.main div.shop{
     justify-content: flex-end;
     background-color: white;
     background-image: url(../images/06.png);
-    padding-right: 150px;
+    padding-right: 10%;
+    padding-left: 8%;
+
 }
 main.main div.shop div.shop_text{
     /* border: 1px solid black; */

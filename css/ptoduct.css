@@ -17,7 +17,12 @@ nav.nav ul.menu_list li.b::before{
 }
 /* ------------------------------------------------ */
 
+div.parent_container main.main{
+    max-width: 1190px;
+    width: calc(100% - 250px);
+}
 div.parent_container main.main div.cover >img{
+    max-width: 1190px;
     width: 100%;
     height: 600px;
     /* background-image: url(../images/productpic/covera2.png); */
@@ -49,8 +54,8 @@ div.parent_container main.main div.product_wrapper{
     /* border: 1px solid red; */
     /* background-image: url(./images/06.png); */
     background-color:rgba(245, 191, 51, .3);
-    padding-right: 120px;
-    padding-left: 100px;
+    padding-right: 10%;
+    padding-left: 8.4%;
 }
 main.main div.product_wrapper div.title >h2{
     color: #F97F0F;
@@ -67,23 +72,24 @@ main.main div.product_wrapper div.grid{
     display: grid;
     grid-template-columns: auto auto auto;
     /* border: 1px solid black; */
-    padding: 50px;
-    gap: 50px;;
+    /* height: auto; */
+    padding: 4.2%;
+    gap: 5%;
+    box-sizing: border-box;
 }
 main.main div.product_wrapper div.grid div {
     border: 2px solid #ab6e13;
     font-size: 18px;
     text-align: center;
-    width: 225px;
+    /* width: 225px; */
     background-color: white;
     overflow: hidden;
     }
 main.main div.product_wrapper div.grid div img{
-    width: 222px;
+    width: 100%;
     height: 230px;
     background-size: contain;
     background-position: cover;
-    
 }
 main.main div.product_wrapper div.grid div a{
     text-decoration: none;
@@ -99,7 +105,8 @@ main.main div.product_wrapper div.grid div:hover{
 main.main div.page {
     /* border: 1px solid red; */
     margin: 50px auto 0px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 main.main div.product_wrapper div.page > ul{
     display: flex;
