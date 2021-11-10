@@ -37,10 +37,6 @@
         display: inline-block;
         color:  #ab6e13;
     }
-    div.parent_container main.main{
-        max-width: 1190px;
-        width: calc(100% - 250px);
-    }
     div.parent_container main.main div.product_wrapper div.a{
         /* border: 1px solid blue; */
         width: 100%;
@@ -183,9 +179,9 @@
         text-align: center;
         color: #FDA04A;
     }
-    main.main div.product_wrapper div.b div.bc{
+    /* main.main div.product_wrapper div.b div.bc{
         margin:  
-    }
+    } */
     main.main div.product_wrapper div.b div.bc >img{
         width: 100%;
         height: auto;

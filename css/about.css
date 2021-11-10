@@ -7,53 +7,15 @@
     nav.nav ul.menu_list > li.aa::before{
         content: url(../images/ICON1.png);
     }
-    /* -----breadcrumb---- */
-    /* nav.breadcrumb{
-         border: 1px solid black; 
-        padding: 5px 10px;
-        margin: 10px;
-    }
-    nav.breadcrumb ol.breadcrumb_list{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        font-size: 0;
-    }
-    nav.breadcrumb ol.breadcrumb_list > li{
-        border: 1px solid red; 
-        display: inline-block;
-        color: #ab6e13;
-        font-size: 16px;
-    }
-    nav.breadcrumb ol.breadcrumb_list > li::before{
-        content: "/";
-        font-size: 18px;
-        color: black;
-        margin: 0 10px;
-    }
-    nav.breadcrumb ol.breadcrumb_list > li:first-child::before{
-        display: none;
-    }
-    nav.breadcrumb ol.breadcrumb_list > li > a{
-          border: 1px solid blue; 
-        text-decoration: none;
-        display: inline-block;
-        color:  #ab6e13;;
-    } */
-    /* nav.breadcrumb ol.breadcrumb_list > li > a:hover{
-        color: #0056b3;
-    } */
-    /*    ------------------------    */
-
     
     /* ------------------------------------------------ */
     /* main.main div{
         margin-left: 60px;
     } */
-    div.parent_container main.main{
+    /* div.parent_container main.main{
         max-width: 1190px;
         width: calc(100% - 250px);
-    }
+    } */
     div.parent_container main.main img.cover_b{
         max-width: 1190px;
         width: 100%;

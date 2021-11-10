@@ -39,10 +39,10 @@
         color:  #ab6e13;
     }
     /* breadcrumb */
-    div.parent_container main.main{
+    /* div.parent_container main.main{
         max-width: 1190px;
         width: calc(100% - 250px);
-    }
+    } */
      div.parent_container main.main div.cover{
          /* border: 1px solid red; */
         width:100%;

@@ -27,35 +27,7 @@ header.header{
     /* background-image: url(../../images/back/images.jpeg);
     background-repeat: repeat; */
 }
-/* @media all and (max-width: 575.98px){
-    header.header{
-     width: 100%;
-    }
-  } 
-  @media all and (min-width: 576px) and (max-width: 767.98px){
-    header.header{
-      width: 540px;
-    }
-  } 
-  @media all and (min-width: 768px) and (max-width: 991.98px){
-    header.header{
-      width: 720px;
-    }
-  }
-  @media all and (min-width: 992px) and (max-width: 1199.98px){
-    header.header{
-      width: 960px;
-    }
-  }
-  @media all and(min-width: 1200px) and (max-width: 1399.98px){
-    header.header{
-      width: 100vw;
-    }
-  }
-  @media all and (min-width: 1400px){
-    header.header{
-     width: 100vw;
-    } */
+
 
 header.header a.man > img{
     display: inline-block;
@@ -153,13 +125,6 @@ aside.aside nav.nav ul.menu_list > li > a{
 
 
 @media all and (min-width: 320px) and (max-width: 991.98px){
-      div.parent_container{
-        border: 1px solid blue;
-      }
-      
-      div.parent_container aside.aside > a>img{
-        display: none;
-      }
       
       div.parent_container aside.aside{
         /* display: none; */
@@ -185,8 +150,7 @@ aside.aside nav.nav ul.menu_list > li > a{
         padding: 5px;
         position: absolute;
         top: 5%;
-        cursor: pointer;
-        
+        cursor: pointer;    
         /* transform: translateY(-20px); */
       }
       div.parent_container aside.aside nav.nav button.btn.-on{
@@ -197,11 +161,11 @@ aside.aside nav.nav ul.menu_list > li > a{
         background-repeat: no-repeat;
       }
       div.parent_container main.main{
-        max-width: 991px;
-        display: block;
-        margin: 0;
-        width: 100%;
-        /* margin-left: 250px; */
+        /* max-width: 991px; */
+        /* display: block; */
+       margin-left: 0;
+       width: 100%;
+        
 
       }
       div.parent_container aside.aside.-open{
@@ -227,68 +191,7 @@ aside.aside nav.nav ul.menu_list > li > a{
       }
      
     } 
-    /* @media all and (min-width: 320px) and (max-width: 575.98px){
-      
-      div.parent_container aside.aside > a>img{
-        display: none;
-      }
-      
-      div.parent_container aside.aside{
-        width: 250px;
-        height: 100vh;
-        position: fixed;
-        left: 0;
-        z-index: 40;
-        background-color:rgba(246, 212, 123, .7);
-        transform: translateX(-249px);
-      }
-      div.parent_container aside.aside nav.nav button.btn{
-        display:inline;
-        width: 100px;
-        height: 100px;
-        border-radius: 0 50px 50px 0;
-        background-image: url(../../images/logo_s.png);
-        background-size: contain;
-        border: 1px solid rgba(246, 212, 123, 1);
-        background-color: rgba(246, 212, 123, .7);
-        transform: translateX(250px);
-        
-      }
-
-      div.parent_container main.main{
-        display: block;
-        margin: 0;
-        width: 767px;
-        border: 1px solid plum;
-      }
-      div.parent_container aside.aside.-open{
-        transform: translateX(0px);
-      }
-      div.parent_container aside.aside nav.nav button.btn_drawer{
-        display: inline;
-        position: absolute;
-        right: -58px;
-        top: 10%;
-        transform: translate(-100%, -50%);
-        color: white;
-        border: 0;
-        font-size: 1rem; 
-        width: 1.8em;    
-        padding: 4px 0;
-        line-height: 1.6;
-        display: inline-block;
-        cursor: pointer;
-        border-radius: 0 5px 5px 0;
-        outline: none;
-      }
-     
-    }  */
-    /* @media all and (max-width: 320px){
-      div.parent_container aside.aside{
-       
-      }
-    }  */
- 
+    
 
     /* img{
         max-width: 100%;

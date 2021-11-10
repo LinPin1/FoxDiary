@@ -17,10 +17,10 @@ nav.nav ul.menu_list li.b::before{
 }
 /* ------------------------------------------------ */
 
-div.parent_container main.main{
+/* div.parent_container main.main{
     max-width: 1190px;
     width: calc(100% - 250px);
-}
+} */
 div.parent_container main.main div.cover >img{
     max-width: 1190px;
     width: 100%;
