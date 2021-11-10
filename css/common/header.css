@@ -185,15 +185,11 @@ aside.aside nav.nav ul.menu_list > li > a{
         padding: 5px;
         position: absolute;
         top: 5%;
+        cursor: pointer;
         
         /* transform: translateY(-20px); */
       }
       div.parent_container aside.aside nav.nav button.btn.-on{
-        display:inline;
-        width: 50px;
-        height: 50px;
-        border-radius: 0 5px 5px 0;
-        background-size: contain;
         /* border: 2px solid rgba(246, 212, 123, .7); */
         background-color: rgba(246, 212, 123, .7);
         transform: translateX(250px);
@@ -210,6 +206,7 @@ aside.aside nav.nav ul.menu_list > li > a{
       }
       div.parent_container aside.aside.-open{
         transform: translateX(0px);
+        transition: 1s ease-in-out;
       }
       div.parent_container aside.aside nav.nav button.btn_drawer{
         display: inline;
