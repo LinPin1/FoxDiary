@@ -57,15 +57,19 @@ main.main div.about_wraper div.about_pic, div.about_text{
 }
 main.main div.about_wraper div.about_pic{
     width: 38%;
-    height: 350px;
+    height: 330px;
     margin-left: 70px;
     margin-top: 73px;
     position: relative;
     z-index: 20;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    
 }
 main.main div.about_wraper div.about_pic > img.about_pic{
     display: inline-block;
-    background-size: cover ;
+    background-size: cover;
     width: 100%;
     height: auto;
     z-index: 2;
@@ -74,12 +78,10 @@ main.main div.about_wraper div.about_text{
     width: 48.5%;
     height: auto;
     display: inline-block;
-    transform: translate(-100px, 30px);
-    /* position: absolute; */
-    /* z-index: 10; */
+    transform: translate(-100px, 0px);
     border:1px solid white;
     background-color:  white;
-    border-radius: 20px;
+    border-radius: 200px 100px 200px 100px;
 }
 
 main.main div.about_wraper div.about_text  >p{
@@ -89,11 +91,6 @@ main.main div.about_wraper div.about_text  >p{
     margin: 59px 40px 40px 120px;
     /* border: 1px solid red; */
     /* text-shadow: 0px 0px 10px gray; */
-}
-@media all and (min-width: 992px) and (max-width: 1199.98px){
-    main.main div.about_wraper div.about_text  >p{
-        /* border: 1px solid red; */
-    }
 }
 main.main div.about_wraper div.about_text  p a{
     text-decoration: none;
@@ -145,12 +142,16 @@ main.main div.product_wraper div.newproduct_text{
     /* border: 1px solid black; */
     margin-right: 200px;
     margin-left: 100px;
+    /* text-overflow: ellipsis; */
 }
 main.main div.product_wraper div.newproduct_text > h2{
     margin: 45px 0;
     margin-bottom: 90px;
     color: #AB6E13;
     font-size: 30px;
+}
+main.main div.product_wraper div.newproduct_text{
+
 }
 @media screen and (min-width: 320px) and (max-width: 575px){
     main.main div.about_wraper{
@@ -161,29 +162,34 @@ main.main div.product_wraper div.newproduct_text > h2{
         font-size: 24px;
     }
 }
+
+
 main.main div.product_wraper div.newproduct{
     display: flex;
     flex-wrap: wrap;
     /* border:  1px solid red; */
     justify-content: space-evenly;
     height: auto;
-    /* margin-top: 45px; */
-    /* margin-right: 180px;
-    margin-left: 80px; */
 }
 main.main div.product_wraper div.newproduct div{
     border: 2px solid black;
     max-width: 194px;
     /* width: 100%; */
+    height: 230px;
     background-color: white;
     border-radius:10px;
     overflow: hidden;
     margin-top: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /* -------------- */
 @media all and (min-width: 992px) and (max-width: 1199.98px){
     main.main div.product_wraper div.newproduct div{
         width: 154px;
+
         
     }
 }
@@ -199,6 +205,9 @@ main.main div.product_wraper div.newproduct div:hover{
 }
 main.main div.product_wraper div.newproduct  p{
     font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 main.main div.product_wraper div.newproduct  a{
     text-decoration: none;
@@ -287,9 +296,10 @@ main.main div.product_wraper div.product_type div.type_b{
     main.main div.product_wraper div.product_type{
         flex-direction: column;
         height: auto;
-       vertical-align: middle;
-       text-align: center;
        justify-content: center;
+       vertical-align: middle;
+       padding-left: 90px;
+       
     }
     main.main div.product_wraper div.product_type div.type_b{
         margin-top: 0;
@@ -403,6 +413,7 @@ img{
         /* border: 1px solid red; */
     }
   }
+  /* -------------------------- */
   @media all and (min-width: 768px) and (max-width: 991.98px){
     main.main div.about_wraper div.about_text  >p{
         font-size: 18px;
@@ -428,13 +439,23 @@ img{
         margin: 50px auto ;
     }
   }
+  /* -------------------------- */
   @media all and (min-width: 576px) and (max-width: 767.98px){
     div.parent_container main.main div.divider{
         margin: 0 0 0 0;
         margin: 50px auto ;
     }
-    main.main div.about_wraper div.about_text  >p{
+    main.main div.about_wraper div.about_pic{
+        display: none;
+    }
+    main.main div.about_wraper div.about_text{
+        transform: translate(80px,20px);
+        width: 80%;
+    }
+    main.main div.about_wraper div.about_text  > p{
         font-size: 16px;
+        margin-left: 20px;
+        /* border: 1px solid red; */
     }
     main.main div.announcement  table  tr,td{
         display: flex;
@@ -465,8 +486,9 @@ img{
         width: 154px;
         margin-right: 10px;
     }
-}       
-@media screen and (min-width: 320px) and (max-width: 575px){
+}
+       /* -------------------- */
+@media screen and (min-width: 320px) and (max-width: 575.98px){
     div.parent_container main.main{
         max-width: 1190px;
         width: 100%;
@@ -481,13 +503,19 @@ img{
     display: none;
     }
     main.main div.about_wraper div.about_text{
-        width: 100%;
-        margin-left: 80px;
+        width: 80%;
+        transform: none;
+        /* border: 1px solid red; */
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
     }
+   
     main.main div.about_wraper div.about_text > P{
-        margin:  0 0 0 0;
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 80%;
+       margin: 0 auto;
     }
     main.main div.about_wraper div.about_text  >p{
         font-size: 18px;
@@ -517,7 +545,8 @@ img{
        /* border: 1px solid blue;  */
     }
     main.main div.product_wraper{
-        background-image: none;
+        /* background-image: none; */
+        background-size: auto;
 
     }
     main.main div.shop{

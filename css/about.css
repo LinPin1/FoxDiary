@@ -24,6 +24,22 @@
         display: block;
         margin: 0 auto;
     }
+
+    @media screen and (min-width: 320px) and (max-width: 1199.98px){
+        div.parent_container main.main div.B{
+
+            background-size: cover;
+            background-position: center center;
+            overflow: hidden;
+        }
+        div.parent_container main.main img.cover_b{
+            /* width: 100%; */
+            width: 1190px;
+            height: 563px;
+         
+        }
+    }
+
      div.parent_container main.main div.divider_b{
         /* border:  1px solid black; */
         height: 45px;
@@ -40,22 +56,60 @@
         width: 100%;
         height:auto;
         display: block;
-        margin-top: 140px;
+        margin-top: 100px;
         padding-left: 100px;
     }
     main.main div.about_a div.about_apic{
         display: inline-block;
         vertical-align: top;
         margin-top: 40px;
-        z-index: 60;
+        /* overflow: hidden; */
+        width: 396px;
+        height: 370px;
+        background-size: contain;
     }
     main.main div.about_a div.about_apic >img{
-        width: 396px;
-        height: 386px;
-        margin: 50px 40px 0 40px;
+        width: 100%;
+        
+        margin: 50px 0px;
         border-radius: 30px;
         box-shadow: 5px 5px 5px 0px gray;
+        /* background-size: cover; */
     }
+
+    @media screen and (min-width: 992px) and (max-width: 1199.98px){
+        main.main div.about_a{
+            padding-left: 0;
+        }
+        main.main div.about_a div.about_apic{
+            width: 40%;
+            height: 370px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 991.98px){
+        main.main div.about_a{
+            padding-left: 0;
+            padding-left: 5%;
+        }
+        main.main div.about_a div.about_apic{
+            width: 40%;
+            height: 370px;
+        }
+        main.main div.about_a{
+            display: block;
+        }
+    }
+  
+    @media screen and (min-width: 320px) and (max-width: 767.98px){
+        main.main div.about_a{
+            padding-left: 5%;
+        }
+        main.main div.about_a div.about_apic{
+            width: 80%;
+            height: auto;
+        }
+    }
+
     main.main div.about_a div.about_atext div.h {
         background-image: url(../images/icon4.png);
         background-repeat: no-repeat;
@@ -80,6 +134,19 @@
         text-align: center;
         padding: 20px;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 991.98px){
+        main.main div.about_a div.about_atext{
+            /* display: block; */
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767.98px){
+        main.main div.about_a div.about_atext{
+            width: 80%;
+        }
+    }
+
     main.main div.about_a div.about_atext div >p {
         text-indent: 2em;
         text-align: left;
@@ -124,6 +191,15 @@
         text-align: center;
         padding: 20px;
     }
+
+    @media screen and (min-width: 320px) and (max-width: 767.98px){
+        main.main div.about_b div.about_btext{
+            padding-left: 10%;
+            margin: 40px 0px 80px 0px;
+            width: 90%;
+        }
+
+    }
     main.main div.about_b div.about_bpic{
         /* border: 1px solid red; */
         display: inline-block;
@@ -138,6 +214,17 @@
         box-shadow: 5px 5px 5px 0px gray;
         transform: rotate(10deg);
         transform-origin: 50% 50%;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767.98px){
+        main.main div.about_b div.about_bpic >img{
+            transform: none;
+            width: 80%;
+            height: auto;
+        }
+        main.main div.about_b div.about_bpic{
+            margin: 0 auto;
+        }
     }
     main.main div.c{
         /* border: 1px solid black; */
@@ -175,4 +262,17 @@
     main.main div.c div.cb, div.cd ,div.cf{
         transform: translate(0%, -50%); 
     }
-    
+    @media screen and (min-width: 320px) and (max-width: 767.98px){
+        main.main div.c div.cb, div.cd ,div.cf{
+            display: block;
+        }
+        main.main div.c div.ch a >p{
+            transform: none;
+        }
+        main.main div.c{
+            padding-left: 0;
+            justify-content:space-between;
+        }
+        
+
+    }

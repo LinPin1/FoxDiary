@@ -184,37 +184,3 @@ aside.aside nav.nav ul.menu_list > li > a{
      
     } 
     
-
-    /* img{
-        max-width: 100%;
-      }
-      @media all and (max-width: 575.98px){
-        div.parent_container main.main{
-         width: 100%;
-        }
-      } 
-      @media all and (min-width: 576px) and (max-width: 767.98px){
-        div.parent_container main.main{
-          width: 540px;
-        }
-      } 
-      @media all and (min-width: 768px) and (max-width: 991.98px){
-        div.parent_container main.main{
-          width: 720px;
-        }
-      }
-      @media all and (min-width: 992px) and (max-width: 1199.98px){
-        div.parent_container main.main{
-          width: 960px;
-        }
-      }
-      @media all and(min-width: 1200px) and (max-width: 1399.98px){
-        div.parent_container main.main{
-          width: 1140px;
-        }
-      }
-      @media all and (min-width: 1400px){
-        div.parent_container main.main{
-         width: 1320px;
-        }
-      } */
