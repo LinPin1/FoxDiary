@@ -3,13 +3,12 @@
 }
 body{
     margin: 0;
-    /* background-color: #F6D47B; */
-    background-image:url(../../images/back/back01.jpg) ;
-    /* background-image: url(./images/06.png); */
-    background-repeat: repeat;
-    /* background-position: right; */
-}
 
+}
+:root{
+  /* --header-height: 60px; */
+  --aside-width:250px;
+}
 /* --------------------- */
 
 /*header */
@@ -48,23 +47,17 @@ header.header a.shoppingcar > img{
 /*  header */
 
 div.parent_container{
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    /* border: 1px solid red; */
-    font-size: 0;
-    box-sizing: border-box;
-    /* overflow: hidden; */
+    
     background-image: url(../../images/back/back01.jpg);
     background-repeat:repeat ;
 } 
 
-div.parent_container aside.aside, div.parent_container main.main{
+/* div.parent_container aside.aside, div.parent_container main.main{
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
     box-sizing: border-box;
-}
+} */
 
  /* menu */
  div.parent_container aside.aside{
@@ -78,9 +71,8 @@ div.parent_container aside.aside, div.parent_container main.main{
 }
 div.parent_container main.main{
     /* border: 1px solid green; */
-    width: calc(100% -250px);
-    max-width: 1190px;
-    margin-left: 250px; 
+    width: calc(100% - var(--aside-width));
+    margin-left: var(--aside-width); 
     
     /* background-color: #FFF3E1; */
 }

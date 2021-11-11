@@ -1,14 +1,21 @@
 @import"./common/header.css";
 @import"./common/footer.css"; 
 
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
 
+}
 
 .wrap{
 	display: none;
 }
 div.parent_container main.main{
-    max-width: 1190px;
+    /* max-width: 1190px; */
     /* width: calc(100% - 250px); */
+    /* border: 1px solid palegreen; */
 }
 div.parent_container main.main  div.cover{
     max-width: 1190px;
