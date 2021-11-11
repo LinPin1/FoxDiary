@@ -4,14 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/tool/aos.css">
     <link rel="stylesheet" href="./css/productpage.css">
 
-    <style>
-    
-
-
-
-    </style>
 
 
 </head>
@@ -91,8 +86,8 @@
                     <div class="ba"><h2>商品描述</h2>
                     </div>
                     <div class="bb">
-                        <p>俏皮活潑的小狐狸狐吉，帶著滿滿的手繪插圖，<br>一起踏入插畫與手帳的美好世界，準備陪伴你的2022年！</p>
-                        <p>：2022狐吉小狐狸手帳早鳥限定優惠價：<br>
+                        <p data-aos="fade-up">俏皮活潑的小狐狸狐吉，帶著滿滿的手繪插圖，<br>一起踏入插畫與手帳的美好世界，準備陪伴你的2022年！</p>
+                        <p data-aos="fade-up">：2022狐吉小狐狸手帳早鳥限定優惠價：<br>
                             2021/08/13 至 2021/10/31 止 <br>
                             早鳥價 500 元<br>
                             （未來定價600元，現省100元）</p>
@@ -134,8 +129,14 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/hamburger.js"></script>
+    <script>
+        $(function(){
+        AOS.init();
+        });
+    </script>
 </body>
 </html>
