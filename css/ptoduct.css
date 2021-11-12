@@ -24,10 +24,10 @@ nav.nav ul.menu_list li.b::before{
 div.parent_container main.main div.slider  div >img{
     /* max-width: 1190px; */
     width: 100%;
-    height: 600px;
+    height: 550px;
     /* background-image: url(../images/productpic/covera2.png); */
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: center center;
     display: block;
     margin: 0 auto;
 }
@@ -55,6 +55,7 @@ main.main div.product_wrapper div.title {
 }
 main.main div.product_wrapper div.grid{
     display: grid;
+    height: auto;
     grid-template-columns: auto auto auto;
     /* border: 1px solid black; */
     /* height: auto; */
@@ -69,6 +70,8 @@ main.main div.product_wrapper div.grid div {
     /* width: 225px; */
     background-color: white;
     overflow: hidden;
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
     }
 main.main div.product_wrapper div.grid div img{
     width: 100%;
@@ -82,6 +85,9 @@ main.main div.product_wrapper div.grid div a{
 main.main div.product_wrapper div.grid div p{
     margin: 0 10px 10px 10px;
     color: #ab6e13;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 main.main div.product_wrapper div.grid div:hover{

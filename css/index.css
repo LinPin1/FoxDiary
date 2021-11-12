@@ -57,12 +57,12 @@ main.main div.about_wraper div.about_pic, div.about_text{
 }
 main.main div.about_wraper div.about_pic{
     width: 38%;
-    height: 330px;
+    height: auto;
     margin-left: 70px;
     margin-top: 73px;
     position: relative;
     z-index: 20;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 50px 50px 50px 50px;
     overflow: hidden;
     /* border: 1px solid red; */
     
@@ -150,9 +150,7 @@ main.main div.product_wraper div.newproduct_text > h2{
     color: #AB6E13;
     font-size: 30px;
 }
-main.main div.product_wraper div.newproduct_text{
 
-}
 @media screen and (min-width: 320px) and (max-width: 575px){
     main.main div.about_wraper{
         margin-left: 0;
@@ -160,6 +158,10 @@ main.main div.product_wraper div.newproduct_text{
     main.main div.product_wraper div.newproduct_text > h2{
         margin: 20px 0;
         font-size: 24px;
+    }
+    main.main div.product_wraper div.newproduct_text{
+        margin: 0;
+
     }
 }
 
@@ -178,25 +180,20 @@ main.main div.product_wraper div.newproduct div{
     height: 230px;
     background-color: white;
     border-radius:10px;
-    overflow: hidden;
     margin-top: 10px;
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 /* -------------- */
 @media all and (min-width: 992px) and (max-width: 1199.98px){
     main.main div.product_wraper div.newproduct div{
         width: 154px;
-
-        
     }
 }
 @media all and (min-width: 768px) and (max-width: 991.98px){
     main.main div.product_wraper div.newproduct div{
-        width: 154px;
-        
+        width: 154px; 
     }
 }
 /* --------------- */
@@ -260,10 +257,8 @@ main.main div.product_wraper div.product_text > h2{
     }
     main.main div.product_wraper div.product_text > h2{
         /* margin: 40px 0; */
-        font-size: 18px;
-        text-align: center;
-       
-    }
+        font-size: 24px;
+    }   
 }
 main.main div.product_wraper div.product_type{
     display: flex;
@@ -292,7 +287,9 @@ main.main div.product_wraper div.product_type  a{
 main.main div.product_wraper div.product_type div.type_b{
     margin-top: 35px;
 }
-@media screen and (min-width: 320px) and (max-width: 575px){
+
+/*  */
+/* @media screen and (min-width: 320px) and (max-width: 575px){
     main.main div.product_wraper div.product_type{
         flex-direction: column;
         height: auto;
@@ -309,14 +306,69 @@ main.main div.product_wraper div.product_type div.type_b{
         vertical-align: middle;
         margin-bottom: 20px;
         margin-left: 50px;
-        /* border: 1px solid red; */
     }
-}
+} */
 main.main div.product_wraper div.product_type  img{
     border-radius: 100px;
     width: 200px;
     height: 200px;
 }
+.swiper-container{
+    display: none;
+}
+/*  */
+@media screen and (min-width: 320px) and (max-width: 575.98px){
+    main.main div.product_wraper div.product_type{
+        display: none;
+    }
+    main.main div.product_wraper{
+        background-image: none;
+    }
+    main.main div.product_wraper div.product_text{
+        margin: 0;
+    }
+.swiper-container {
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: white;
+  }
+  .card__img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    overflow: hidden;
+  }
+  /* .card__img > img{
+      width: 100%;
+      height: auto;
+  } */
+
+  .card__body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    height: 80px;
+  }
+  .card__title {
+    font-size: 1.25rem;
+    text-align: center;
+  } 
+  .swiper-container .swiper-wrapper .swiper-slide >a{
+      text-decoration: none;
+  }
+}
+/*  */
 main.main div.shop{
     /* border: 1px solid red; */
     width: calc(100%-250px);
