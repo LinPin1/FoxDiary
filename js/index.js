@@ -1,3 +1,4 @@
+
 //loading動畫
 var textWrapper = document.querySelector('.ml12');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -32,6 +33,18 @@ anime.timeline({loop: true})
     loading.style.display = "none";
     wrap.style.display = "block";
   },3000);
+
+  
+
+
+  setTimeout(function(){
+    AOS.init();
+  },4000);
+
+  // $(function(){
+  //   AOS.init();
+  //   },6000);
+
 
   // menu
 $(function(){

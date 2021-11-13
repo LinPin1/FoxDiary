@@ -6,6 +6,12 @@
 nav.nav ul.menu_list > li.aa::before{
     content: url(../images/ICON1.png);
 }
+main.main div.teach div.teach_tt_d{
+    display: none;
+}
+main.main div.teach div.teach_tt＿d >p{
+    display: none;
+}
 /* div.parent_container main.main{
     max-width: 1190px;
     width: calc(100% - 250px);
@@ -20,6 +26,19 @@ main.main div.cover div.cover_pic img{
     height: auto;
     display: block; 
 }
+
+@media all and (min-width: 320px) and (max-width: 1199.98px){
+    main.main div.cover div.cover_pic{
+        background-size: cover;
+        background-position: right center;
+        overflow: hidden;
+    }
+    main.main div.cover div.cover_pic > img{
+        width: 1190px;
+        height: 450px;
+    }
+}
+
 main.main div.cover div.cover_text{
     margin: 0 auto;
     /* border: 1px solid blue; */
@@ -38,7 +57,24 @@ main.main div.cover div.cover_text div.frame p{
     margin: 0 auto;
     padding: 0 77px;
     line-height: 2;
-} 
+    font-size: 18px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1199.98px){
+    main.main div.cover div.cover_text{
+        width: 80%;
+    }
+}
+@media all and (min-width: 320px) and (max-width: 767.98px){
+    main.main div.cover div.cover_text{
+        width: 80%;
+    }
+    main.main div.cover div.cover_text div.frame p{
+        padding: 0;
+        font-size: 16px;
+    }
+}
+
 main.main div.divider111{
     height: 45px;
     /* background-image: url(./images/divider111.png); */
@@ -88,6 +124,7 @@ main.main div.teach_a{
     display: flex;
     justify-content: space-evenly;
     padding: auto 150px auto 70px ;
+    flex-wrap: wrap;
 }
 main.main div.teach_a div:hover{
 transform: translate(-20px, -20px); 
@@ -108,6 +145,9 @@ main.main div.teach_a div img{
 main.main div.teach_a div p.t{
     color: #ab6e13;
     margin: 0;
+    /* margin-left: 30px; */
+    display: inline;
+    width: calc(100% - 30px);
 }
 main.main div.teach_a div p.n{
     margin: 0;
@@ -119,7 +159,53 @@ main.main div.teach_a div p.n{
     font-size: 20px;
     color: white;
     background-color : #F6D47B;
+    display: inline-block;
 }
+/* @media all and (min-width: 768px) and (max-width: 991.98px){
+    main.main div.teach_a div.aa, div.ab, div.ac{
+        width: 220px;
+    }
+    main.main div.teach_a div img{
+        width: 220px;
+    }
+}
+*/
+.swiper {
+    display: none;
+}
+@media all and (min-width: 320px) and (max-width: 767.98px){
+    main.main div.teach_a{
+        display: none;
+    }
+    
+    .swiper {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        
+      }
+
+      .swiper-slide img {
+        width: 60%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-radius: 20px;
+      }
+
+} 
 
 main.main div.teach_b{
     /* border: 1px solid red; */
@@ -144,6 +230,8 @@ main.main div.teach_b div img{
 main.main div.teach_b div p.t{
     color: #ab6e13;
     margin: 0;
+    display: inline;
+    width: calc(100% - 30px);
 }
 main.main div.teach_b div p.n{
     margin: 0;
@@ -155,27 +243,51 @@ main.main div.teach_b div p.n{
     font-size: 20px;
     color: white;
     background-color : #F6D47B;
+    display: inline-block;
 }
-main.main div.book{
-    max-width: 1190px;
-    width: calc(100% - 250px);
-    /* border: 3px solid #ab6e13; */
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    vertical-align: middle;
-    /* background-color:white; */
-    padding-bottom: 60px;
+
+@media all and (min-width: 320px) and (max-width: 767.98px){
+    main.main div.teach_b{
+        display: none;
+    }
+    main.main div.teach div.teach_tt{
+        display: none;
+    }
+    main.main div.teach div.teach_tt_d{
+        display: inline-block;
+        background-image: url(../images/icon4.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 60px;
+        /* margin-bottom: 30px; */
+        margin: 0 100px 30px 100px;
+    }
+    main.main div.teach div.teach_tt_d >p{
+        color: #ab6e13;
+        display: inline-block;
+        font-size: 20px;
+        padding: 0 30px;
+        border-radius: 20px ;
+       
+    }
 
 }
-main.main div.teach div.book div img{
-    width: 130px;
-    padding: 10px;
-    margin: 0;
-}
-main.main div.teach div.book div img:hover{
-    transform: scale(1.5);  
-    transform-origin: 50% 50%; 
-    /* transform: rotate(20deg);  
-    transform-origin: 50% 50%; */
-}
+
+.swiper-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* min-height: 100vh; */
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .swiper-slide {
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }

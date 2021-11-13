@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>手帳教學</title>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
     <link rel="stylesheet" href="./css/aboutpag.css">
 
 
@@ -53,10 +53,11 @@
             <div class="divider111">
             </div>
             <div class="teach">
-                <div class="teach_t"><p>推薦網站<p>
+                <div class="teach_t"><p>推薦文章<p>
                 </div>
                 <div class="teach_tt"><p>手帳寫什麼？</p>
                 </div>
+
                 <div class="teach_a">
                     <div class="aa">
                          <a href="#">
@@ -80,6 +81,42 @@
                         </a>
                     </div>
                 </div>
+                <!--  -->
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img data-src="./images/aboutpag/aa.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="./images/aboutpag/ab.jpg" class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img  data-src="./images/aboutpag/ac.jpg"  class="swiper-lazy"/>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img  data-src="./images/aboutpag/ba.jpg"  class="swiper-lazy"/>
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img  data-src="./images/aboutpag/bb.jpg"  class="swiper-lazy" />
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white">
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                  <!--  -->
                 <div class="teach_tt"><p>其他教學</p>
                 </div>
                 <div class="teach_b">
@@ -98,15 +135,28 @@
                         </a>
                     </div>
                 </div>
-                <div class="teach_tt"><p>推薦書籍</p>
-                </div>
-                <div class="book">
+                <div class="teach_tt"><p>推薦書籍</p></div>
+                <div class="teach_tt_d"><p>推薦書籍</p></div>
+                
+                <!-- <div class="book">
                     <div class="a"><img src="./images/aboutpag/booka.jpg" alt=""></div>
                     <div class="b"><img src="./images/aboutpag/bookb.jpg" alt=""></div>
                     <div class="c"><img src="./images/aboutpag/bookc.jpg" alt=""></div>
                     <div class="d"><img src="./images/aboutpag/bookd.png" alt=""></div>
                     <div class="e"><img src="./images/aboutpag/booke.jpg" alt=""></div>
-                </div>            
+                </div>             -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <!-- <div class="swiper-slide" style="background-image:url('./images/aboutpag/book//arrow.png')"></div> -->
+                      <div class="swiper-slide" style="background-image:url('./images/aboutpag/book/1.jpg.png')"></div>
+                      <div class="swiper-slide" style="background-image:url('./images/aboutpag/book/3.jpeg.png')"></div>
+                      <div class="swiper-slide" style="background-image:url('./images/aboutpag/book/4.jpeg.png')"></div>
+                      <div class="swiper-slide" style="background-image:url('./images/aboutpag/book/5.jpeg.png')"></div>
+                      <div class="swiper-slide" style="background-image:url('./images/aboutpag/book/6.jpeg.png')"></div>
+                      <div class="swiper-slide" style="background-image:url('./images/aboutpag/book/7.jpeg.png')"></div>
+                      <div class="swiper-slide" style="background-image:url('./images/aboutpag/book/8.jpeg.png')"></div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -125,9 +175,34 @@
         </div>
     </footer>
     
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script src="./js/hamburger.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        lazy: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+        // book
+        const mySwiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            slidesPerView: 'auto',
+            centeredSlides: true,
+ 
+            });
+
+
+    </script>
 
 </body>
 </html>
