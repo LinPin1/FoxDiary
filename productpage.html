@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/tool/flexslider.css">
     <link rel="stylesheet" href="./css/tool/aos.css">
     <link rel="stylesheet" href="./css/productpage.css">
 
@@ -57,6 +58,9 @@
                             <img class="d" src="./images/ac/acc.png" alt="">
                         </div>
                     </div>
+                    <!--  -->
+                    
+                    <!--  -->
                     <div class="atext">
                         <div><h2>2022狐吉小狐狸手帳</h2></div>
                         <div>
@@ -131,12 +135,36 @@
     </footer>
     
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.flexslider.js"></script>
+    <script src="./js/jquery.flexslider-min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/hamburger.js"></script>
     <script>
         $(function(){
         AOS.init();
         });
+        // 
+        $(window).load(function() {
+  // The slider being synced must be initialized first
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+ 
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+                    
     </script>
 </body>
 </html>

@@ -8,7 +8,7 @@
     nav.breadcrumb{
         /* border: 1px solid black; */
         padding: 5px 10px;
-        margin: 10px;
+        /* margin: 10px; */
     }
     nav.breadcrumb ol.breadcrumb_list{
         margin: 0;
@@ -44,6 +44,11 @@
         background-color: rgba(255, 255, 255, .5);
         margin-bottom: 50px;
     }
+    div.parent_container main.main{
+        height: 100%;
+    }
+
+
     div.parent_container main.main div.product_wrapper div.a div.apic{
         display: inline-block;
         display: inline-grid;
@@ -126,6 +131,8 @@
         background-color: #FBEECF;
         border: 1px solid #f6d47b;
         font-size: 15px;
+        vertical-align: middle;
+        outline: none;
     }
     main.main div.product_wrapper div.a div.atext form div.input input.buy{
         width: 100px;

@@ -6,6 +6,7 @@
     <title>全部商品</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="./css/tool/aos.css">
     <link rel="stylesheet" href="./css/ptoduct.css">
 
     <style>
@@ -39,9 +40,12 @@
         
         <main class="main">
             <div class="slider">
+                <div class="slide-1"><img src="./images/productpic/cover4.jpeg" alt=""></div>
                 <div class="slide-1"><img src="./images/productpic/covera2.png" alt=""></div>
-                <div class="slide-2"><img src="./images/productpic/covera3.png" alt=""></div>
+                <!-- <div class="slide-2"><img src="./images/productpic/covera3.png" alt=""></div> -->
                 <div class="slide-3"><img src="./images/productpic/covera1.png" alt=""></div>
+                <div class="slide-2"><img src="./images/productpic/cover5.jpeg" alt=""></div>
+                <div class="slide-3"><img src="./images/productpic/cover6.jpeg" alt=""></div>
             </div>
             <!-- <div class="cover"><img src="./images/productpic/covera2.png" alt="">
             </div> -->
@@ -49,6 +53,13 @@
                 <div class="title">
                     <h2>&#9728 全部商品 &#9728</h2>
                 </div>
+                <nav class="breadcrumb">
+                    <ol class="breadcrumb_list"> 
+                        <li><a href="./product.html">手帳本</a></li>
+                        <li><a href="./product.html">紙膠帶</a></li>
+                        <li><a href="./product.html">其他工具</a></li>
+                    </ol>
+                </nav>
                 <div class="grid">
                     <div class="a">
                         <a href="./productpage.html"><img src="./images/product/product_aaa.png" class="a" alt=""
@@ -149,6 +160,11 @@
         // dotsClass:true;
         arrows: false,
         infinite: true,
+    });
+
+    // aos
+    $(function(){
+    AOS.init();
     });
     </script>
 

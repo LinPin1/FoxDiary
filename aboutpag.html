@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>手帳教學</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+    <link rel="stylesheet" href="./css/tool/aos.css">
     <link rel="stylesheet" href="./css/aboutpag.css">
 
 
@@ -39,9 +40,10 @@
                 </ol>
             </nav> -->
             <div class="cover">
-               <div class="cover_pic"><img src="./images/新增資料夾 (4)/2400x.png" alt=""></div>
+               <div class="cover_pic"><img src="./images/新增資料夾 (4)/2400x.png" alt="" data-aos="fade-up"
+                data-aos-duration="2000"></div>
                <div class="cover_text">
-                   <div class="frame">
+                   <div class="frame" data-aos="fade-up">
                        <p>很多人剛開始了解手帳，不知道手帳要寫些什麼內容，其實手帳裡要寫什麼是沒有特別規定的，你想寫什麼就能寫什麼。</p>
                        <p>但越是這樣，就讓人越迷茫：我該寫些什麼呢？
                         其實你可以簡單地記錄發生過什麼事情，有哪些讓哪感到幸福的瞬間？有什麼新奇的想法？或是什麼事情讓你有新的感悟。剛開始不要害怕像流水帳，之後的經驗累積會讓你越來熟練。
@@ -58,22 +60,22 @@
                 <div class="teach_tt"><p>手帳寫什麼？</p>
                 </div>
 
-                <div class="teach_a">
-                    <div class="aa">
+                <div class="teach_a" >
+                    <div class="aa" data-aos="flip-left">
                          <a href="#">
                             <img src="./images/aboutpag/aa.jpg" class="a" alt="">
                             <p class="n">1</p>
                             <p class="t">7大族群100項ideas讓你寫不完！</p>
                         </a>
                     </div>
-                    <div class="ab">
+                    <div class="ab" data-aos="flip-left">
                         <a href="#">
                             <img src="./images/aboutpag/ab.jpg" class="b" alt="">
                             <p class="n">2</p>
                             <p class="t">竟然用「週計畫手帳」4大招能讓新手寫好寫滿</p>
                         </a>
                     </div>
-                    <div class="ac">
+                    <div class="ac" data-aos="flip-left">
                         <a href="#">
                             <img src="./images/aboutpag/ac.jpg" class="c" alt="">
                             <p class="n">3</p>
@@ -120,14 +122,14 @@
                 <div class="teach_tt"><p>其他教學</p>
                 </div>
                 <div class="teach_b">
-                    <div class="ba">
+                    <div class="ba" data-aos="flip-left">
                          <a href="#">
                             <img src="./images/aboutpag/ba.jpg" class="a" alt="">
                             <p class="n">1</p>
                             <p class="t">手帳挑選攻略13大守則不踩雷</p>
                         </a>
                     </div>
-                    <div class="bb">
+                    <div class="bb" data-aos="flip-left">
                         <a href="#">
                             <img src="./images/aboutpag/bb.jpg" class="b" alt="">
                             <p class="n">2</p>
@@ -180,6 +182,13 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script src="./js/hamburger.js"></script>
     <script>
+
+        //aos
+        $(function(){
+        AOS.init();
+        });
+        //----------
+
         var swiper = new Swiper(".mySwiper", {
         lazy: true,
         pagination: {
