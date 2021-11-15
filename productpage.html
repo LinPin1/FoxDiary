@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/tool/flexslider.css">
+    <title>商品內頁</title>
     <link rel="stylesheet" href="./css/tool/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/productpage.css">
 
 
@@ -42,9 +42,10 @@
                     <li><a href="./productpage.html">2022狐吉小狐狸手帳</a></li>
                 </ol>
             </nav>
+    
             <div class="product_wrapper">
                 <div class="a">
-                    <div class="apic">
+                            <!-- <div class="apic">
                         <div class="aa">
                             <img class="a" src="./images/ac/aa.png" alt="">
                         </div>
@@ -57,9 +58,39 @@
                         <div class="ad">
                             <img class="d" src="./images/ac/acc.png" alt="">
                         </div>
-                    </div>
+                    </div> -->
                     <!--  -->
-                    
+                    <div class="pp">
+                    <div  style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"  class="swiper mySwiper2" >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./images/ac/aa.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./images/ac/ab.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./images/ac/ac.png" />
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./images/ac/aaa.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./images/ac/abb.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./images/ac/acc.png" />
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                  
                     <!--  -->
                     <div class="atext">
                         <div><h2>2022狐吉小狐狸手帳</h2></div>
@@ -96,12 +127,13 @@
                             早鳥價 500 元<br>
                             （未來定價600元，現省100元）</p>
                     </div>
-                    <div class="bc">
+                    <div class="bc" data-aos="fade-up"
+                    data-aos-duration="1000">
                         <img src="./images/productpage_b/banner.png" alt="">
                     </div>
                     <div class="bd">
-                        <img src="./images/productpage_b/bd.png" alt="">
-                        <p>&#9834全彩列印，可完全平攤書寫!<br>
+                        <img src="./images/productpage_b/bd.png" alt="" data-aos="fade-right">
+                        <p data-aos="fade-up">&#9834全彩列印，可完全平攤書寫!<br>
                             &#9834內頁編排為1-12月份之月計畫。<br>
                             &#9834標註國定假日、農曆初一、十五。<br>
                             &#9834專屬PVC霧面封套及筆套，攜帶便利。<br>
@@ -111,14 +143,14 @@
                         </p>
                     </div>
                     <div class="be">
-                        <p>12個跨頁的月計畫個跨頁的月計畫&一周兩頁的週計畫，左頁週計畫&右頁FreeNote，有充足呃發揮空間。<br>
+                        <p data-aos="fade-right">12個跨頁的月計畫個跨頁的月計畫&一周兩頁的週計畫，左頁週計畫&右頁FreeNote，有充足呃發揮空間。<br>
                             &emsp;&emsp;精心繪製的全新插圖，每一頁都有俏皮的狐吉，陪伴你的記事，一起隨心所欲的紀錄。一起隨心所欲的紀錄。</p>
-                        <img src="./images/productpage_b/be.jpg" alt="">
+                        <img src="./images/productpage_b/be.jpg" alt="" data-aos="fade-up">
                     </div>
                 </div>
             </div>
+        </div>
         </main>
-    </div>
     <footer class="footer">
         <div class="footer_box">
             <div class="shop_information">
@@ -135,36 +167,32 @@
     </footer>
     
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/jquery.flexslider.js"></script>
-    <script src="./js/jquery.flexslider-min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/hamburger.js"></script>
     <script>
         $(function(){
         AOS.init();
         });
-        // 
-        $(window).load(function() {
-  // The slider being synced must be initialized first
-  $('#carousel').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    itemWidth: 210,
-    itemMargin: 5,
-    asNavFor: '#slider'
-  });
- 
-  $('#slider').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    sync: "#carousel"
-  });
-});
-                    
+    
+  // ------------------------------------------
+  var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 3,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 3,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+                            
     </script>
 </body>
 </html>
