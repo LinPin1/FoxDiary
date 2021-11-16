@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>關於店舖</title>
     <link rel="stylesheet" href="./css/member.css">
 
     <style>
@@ -50,22 +50,54 @@
                     <img src="./images/member/member_b.jpg" alt="">
                 </div>
                 <div class="content_form">
-                    <div class="t"><h2>會員登入</h2></div>
-                    <form class="form" action="#">
-                        <div class="username">
-                            <label for="username">帳號：</label>
-                            <input type="text" name="username" value="" placeholder="請輸入帳號" id="username">
+                    <div class="tab">
+                        <ul class="tab_list">
+                            <li><a href="#" data-target="tab1" class="tab -on">會員登入</a></li>
+                            <li><a href="#" data-target="tab2" class="tab">註冊會員</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents">
+                        <div class="tab tab1 -on">                         
+                            <!-- <div class="t"><h2>會員登入</h2></div> -->
+                            <form class="form" action="#">
+                                <div class="username">
+                                    <label for="username">帳號：</label>
+                                    <input type="text" name="username" value="" placeholder="請輸入帳號" id="username">
+                                </div>
+                                <div class="password">
+                                <label for="password">密碼：</label>
+                                <input type="password" name="password" value="" placeholder="請輸入密碼" id="password">
+                                </div>
+                                <button><p>登入</p></button>
+                                <a href="#"><p>忘記密碼？</p></a>
+                            </form>
                         </div>
-                        <div class="password">
-                           <label for="password">密碼：</label>
-                           <input type="password" name="password" value="" placeholder="請輸入密碼" id="password">
+                   
+                        <div class="tab tab2">
+                            <!-- <div class="t"><h2>註冊會員</h2></div> -->
+                            <form class="form" action="#">
+                                <div class="name">
+                                    <label for="name">暱稱：</label>
+                                    <input type="mail" name="name" value="" placeholder="中/英 文姓名" id="name">
+                                </div>
+                                <div class="email">
+                                    <label for="mail">信箱：</label>
+                                    <input type="mail" name="mail" value="" placeholder="aaa@mail.com" id="mail">
+                                </div>
+                                <div class="username">
+                                    <label for="username">帳號：</label>
+                                    <input type="text" name="username" value="" placeholder="請輸入帳號" id="username">
+                                </div>
+                                <div class="password">
+                                <label for="password">密碼：</label>
+                                <input type="password" name="password" value="" placeholder="請輸入密碼" id="password">
+                                </div>
+                                <button><p>註冊</p></button>
+                            </form>
                         </div>
-                        <button><p>登入</p></button>
-                        <a href="#"><p>忘記密碼？</p></a>
-                    </form>
+                    </div>
                 </div>
             </div>
-
         </main>
     </div>
     <footer class="footer">
@@ -74,9 +106,8 @@
                 <div class="tel"><p>電話：<br>02-28899999</p></div>
                 <div class="address"><p>地址:<br>237新北市三峽區國光街35號</p></div>
                 <div class="follow"><p>關注我：<a href="#"><img src="./images/facebook.png" alt=""><img src="./images/instagram-navi.png" alt=""></a></p></div>
-                <div class="QA"><a href="#"><p>Q & A</p></a></div>
             </div>
-            <div class="tbm"><p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/"><p>[緯育TibaMe]</p></a>，後續會由專人協助處理
+            <div class="tbm"><p>本網站為緯育TibaMe前端工程師專業技術養成班第72期學員專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/TibaMe/">[緯育TibaMe]</a>，後續會由專人協助處理
             </p></div>
             <div class="borrow"><p>參考網站：</p><a href="https://www.hellostudio-shop.co/pages/about"><p>Hello Studio 你好工作室 </p></a>
             </div>
@@ -85,6 +116,21 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/hamburger.js"></script>
+    <script>
+        $(function(){
+            $("a.tab").on("click", function(e){
+                e.preventDefault();
+                
+                /* 將頁籤列表移除所有 -on，再將指定的加上 -on */
+                $(this).closest("ul").find("a.tab").removeClass("-on");
+                $(this).addClass("-on");
+                
+                /* 找到對應的頁籤內容，加上 -on 來顯示 */
+                $("div.tab").removeClass("-on");
+                $("div.tab." + $(this).attr("data-target")).addClass("-on");
+            });
+        });
+    </script>
 </body>
 </html>
 

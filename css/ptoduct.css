@@ -21,18 +21,37 @@ nav.nav ul.menu_list li.b::before{
     max-width: 1190px;
     width: calc(100% - 250px);
 } */
-
+div.parent_container main.main div.slider{
+    width: 97%;
+    height: auto;
+}
 div.parent_container main.main div.slider  div >img{
     /* max-width: 1190px; */
     width: 100%;
-    height: 550px;
+    height: 500px;
     /* background-image: url(../images/productpic/covera2.png); */
     background-repeat: no-repeat;
     background-size: center center;
     display: block;
     margin: 0 auto;
 }
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    div.parent_container main.main div.slider  div >img{
+        height: 400px;
+    }
+    div.parent_container main.main div.slider{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 575.98px){
+    div.parent_container main.main div.slider  div >img{
+        height: 250px;
+    }
+    div.parent_container main.main div.slider{
+        height: 250px;
+    }
 
+}
 div.parent_container main.main div.product_wrapper{
     width: 100%;
     height: auto;
@@ -104,21 +123,20 @@ nav.breadcrumb ol.breadcrumb_list > li > a{
 }
 /*  */
 main.main div.product_wrapper div.grid{
-    display: grid;
-    height: 1100px;
-    grid-template-columns: auto auto auto;
-    /* border: 1px solid black; */
+    display: flex;
+    height: auto;
     padding: 4%;
-    gap: 6%;
-    /* overflow: auto; */
-    /* box-sizing: border-box; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 main.main div.product_wrapper div.grid div {
     border: 2px solid #ab6e13;
+    width: 230px;
     font-size: 18px;
     text-align: center;
-    height: 306px;
-    /* width: 225px; */
+    height: auto;
+    margin-right: 30px;
+    margin-top: 20px;
     background-color: white;
     overflow: hidden;
     white-space: nowrap;
@@ -128,7 +146,7 @@ main.main div.product_wrapper div.grid div img{
     width: 100%;
     height: 230px;
     background-size: contain;
-    background-position: cover;
+    background-position: center;
 }
 main.main div.product_wrapper div.grid div a{
     text-decoration: none;
@@ -147,7 +165,7 @@ main.main div.product_wrapper div.grid div p{
         overflow: auto;
     }
     main.main div.product_wrapper div.grid div{
-        height: 276px;
+        height: 240px;
     }
     main.main div.product_wrapper div.grid div img{
         height: 200px;
@@ -160,7 +178,7 @@ main.main div.product_wrapper div.grid div p{
         overflow: auto;
     }
     main.main div.product_wrapper div.grid div{
-        height: 276px;
+        height: 240px;
     }
     main.main div.product_wrapper div.grid div img{
         height: 200px;

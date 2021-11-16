@@ -564,10 +564,13 @@ img{
     }
    
     main.main div.about_wraper div.about_text > P{
-        margin-top: 20px;
+        /* border: 1px solid red; */
+        padding-top: 20px;
+        /* margin-top: 20px; */
         margin-bottom: 20px;
         width: 80%;
        margin: 0 auto;
+       font-size: 16px;
     }
     main.main div.about_wraper div.about_text  >p{
         font-size: 18px;

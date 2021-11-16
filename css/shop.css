@@ -142,10 +142,10 @@
             background-color: rgba(255, 255, 255, .5);
         }
 
-        /* main.main div.shop div.shop_pic {
+        main.main div.shop div.shop_pic {
             width: 500px;
             height: 345px;
-        } */
+        }
         main.main div.shop div.shop_text {
             width: 350px;
             height: 345px;
@@ -161,6 +161,9 @@
         @media screen and (min-width: 320px) and (max-width: 575.98px){
             main.main div.shop{
                 flex-direction: column;
+            }
+            main.main div.shop div.shop_pic{
+                margin: 0 auto;
             }
             main.main div.shop div.shop_text{
                 text-align: center;

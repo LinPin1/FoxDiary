@@ -63,6 +63,7 @@
         justify-content: center;
         align-items: center;
     }
+    
     main.main div.content div.content_pic{
         width: 55%;
     }
@@ -121,18 +122,91 @@
         text-align: right;
         color: #ab6e13;
     }
+
+    /*  */
+    main.main div.content div.content_form div.tab{
+        /* border: 1px solid red; */
+    }
+    main.main div.content div.content_form div.tab ul.tab_list{
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+      }
+    main.main div.content div.content_form div.tab ul.tab_list > li{
+        display: inline-block;
+        /* width: 157px; */
+      }
+     main.main div.content  div.content_form div.tab ul.tab_list > li > a{
+        text-decoration: none;
+        display: inline-block;
+        /* border: 1px solid #ccc; */
+        /* border-bottom: 1px solid black; */
+        padding: 2px 20px;
+        border-radius: 5px 5px 0 0;
+        cursor: pointer;
+        color: #ccc;
+      
+        position: relative;
+        top: 1px;
+      }
+      
+      /* 畫出底部黑線 */
+    main.main div.content div.content_form div.tab ul.tab_list > li > a::after{
+        content: "";
+        position: absolute;
+        width: calc(100% + 2px);
+        height: 1px;
+        /* background-color: black; */
+        bottom:-1px;
+        left: -1px;
+        z-index: 1;
+      }
+    main.main div.content  div.content_form div.tab ul.tab_list > li > a.-on{
+        /* border: 1px solid black; */
+        /* border-bottom: 1px solid white; */
+        color: #ab6e13;
+        font-size: 20px;
+      }
+ 
+      /* 頁籤內容區塊 */
+      main.main div.content  div.content_form div.tab_contents{
+        /* border: 1px solid black; */
+        width:45%;
+    /*   margin-top: 30px; */
+    }
+    main.main div.content div.content_form div.tab_contents div.tab{
+        padding: 10px;
+        display: none;
+    }
+    main.main div.content div.content_form div.tab_contents div.tab.-on{
+        display: block;
+    }
+      
+    /*  */
     @media screen and (min-width: 320px) and (max-width: 767.98px){
         main.main div.content div.content_pic{
             display: none;
         }
         main.main div.content{
             width: 90%;
+            height: 500px;
         }
         main.main div.content div.content_form{
+            text-align: center;
             width: 80%;
-        }
-        main.main div.content div.content_form form.form  a >p{
+        } 
+        main.main div.content div.content_form div.tab_contents div.tab.-on{
+            margin: 0 auto;
             text-align: center;
         }
-        
+        main.main div.content div.content_form div.tab_contents div.tab.-on form.form{
+            margin: 0 auto;
+            text-align: center;
+            /* margin-left: 8%;
+            margin-right: 8%; */
+        }
+        /* main.main div.content div.content_form form.form  a >p{
+            text-align: center;
+        } */
     }
