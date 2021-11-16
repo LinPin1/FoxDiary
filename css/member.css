@@ -9,7 +9,7 @@
       nav.breadcrumb{
         /* border: 1px solid black; */
         padding: 5px 10px;
-        margin: 10px;
+        /* margin: 10px; */
     }
     nav.breadcrumb ol.breadcrumb_list{
         margin: 0;
@@ -53,7 +53,7 @@
         width: 100%;
     }
     main.main div.content{
-        width: 60%;
+        width: 705px;
         /* border: 1px solid red; */
         border-radius: 150px 150px 150px 150px;
         background-color: white;
@@ -89,7 +89,7 @@
 
     }
     main.main div.content div.content_form form.form input{
-        width: 200px;
+        width: 170px;
         height: 40px;
         border-radius: 15px;
         background-color: white;
@@ -120,4 +120,19 @@
         font-size: 16px;
         text-align: right;
         color: #ab6e13;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767.98px){
+        main.main div.content div.content_pic{
+            display: none;
+        }
+        main.main div.content{
+            width: 90%;
+        }
+        main.main div.content div.content_form{
+            width: 80%;
+        }
+        main.main div.content div.content_form form.form  a >p{
+            text-align: center;
+        }
+        
     }
