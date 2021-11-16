@@ -119,11 +119,13 @@
             main.main div.news div.news_content div{
                 /* display: inline-block; */
                 width: 80%;
+                
 
             }
             main.main div.news div.news_content div img{
                 display: block;
                 margin: 0 auto;
+                margin-top: 20px;
 
             }
             main.main div.news div.news_content div p{

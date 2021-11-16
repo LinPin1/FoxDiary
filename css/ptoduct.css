@@ -22,7 +22,7 @@ nav.nav ul.menu_list li.b::before{
     width: calc(100% - 250px);
 } */
 div.parent_container main.main div.slider{
-    width: 97%;
+    width: 100%;
     height: auto;
 }
 div.parent_container main.main div.slider  div >img{
