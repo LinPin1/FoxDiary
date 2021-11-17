@@ -160,12 +160,12 @@ main.main div.product_wrapper div.grid div p{
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px){
     main.main div.product_wrapper div.grid{
-        grid-template-columns: auto auto ;
-        gap: 9%;
+        /* grid-template-columns: auto auto ;
+        gap: 9%; */
         overflow: auto;
     }
     main.main div.product_wrapper div.grid div{
-        height: 240px;
+        height: auto;
     }
     main.main div.product_wrapper div.grid div img{
         height: 200px;
@@ -174,11 +174,11 @@ main.main div.product_wrapper div.grid div p{
 }
 @media screen and (min-width: 320px) and (max-width: 575.98px){
     main.main div.product_wrapper div.grid{
-        grid-template-columns: auto auto ;
+        /* grid-template-columns: auto auto ; */
         overflow: auto;
     }
     main.main div.product_wrapper div.grid div{
-        height: 240px;
+        height: auto;
     }
     main.main div.product_wrapper div.grid div img{
         height: 200px;
