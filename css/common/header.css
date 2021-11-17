@@ -126,7 +126,7 @@ aside.aside nav.nav ul.menu_list > li > a{
         position: fixed;
         left: 0;
         z-index: 40;
-        background-color:rgba(246, 212, 123, .7);
+        background-color:rgba(246, 212, 123, .9);
         transform: translateX(-249px);
         transition: 1s ease-in-out;
       }
@@ -138,7 +138,7 @@ aside.aside nav.nav ul.menu_list > li > a{
         background-image: url(../../images/menu.png);
         background-size: contain;
         border: none;
-        background-color: rgba(246, 212, 123, .7);
+        background-color: rgba(246, 212, 123, .9);
         transform: translateX(250px);
         padding: 5px;
         position: absolute;
