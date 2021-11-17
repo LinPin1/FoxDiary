@@ -30,7 +30,7 @@ main.main div.cover div.cover_pic img{
 @media all and (min-width: 320px) and (max-width: 1199.98px){
     main.main div.cover div.cover_pic{
         background-size: cover;
-        background-position: right center;
+        /* background-position: right center; */
         overflow: hidden;
     }
     main.main div.cover div.cover_pic > img{
