@@ -207,4 +207,7 @@
         /* main.main div.content div.content_form form.form  a >p{
             text-align: center;
         } */
+        main.main div.content  div.content_form div.tab_contents{
+            width: 90%;
+        }
     }
