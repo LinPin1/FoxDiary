@@ -166,6 +166,7 @@
             }
             main.main div.shop div.shop_pic{
                 margin: 0 auto;
+                width: 80%;
             }
             main.main div.shop div.shop_text{
                 text-align: center;
